@@ -60,7 +60,7 @@ function calcularParte1(){
         document.getElementById('situacaoMediaFinal1').style.color = "#55cb50";
     }
     else {
-        document.getElementById('situacaoMediaFinal1').value = ("Realizara Prova Substitutiva");
+        document.getElementById('situacaoMediaFinal1').value = ("Realizar a Prova Substitutiva");
         document.getElementById('situacaoMediaFinal1').style.color = "#c2a202";
         document.getElementById('divisaoMediaFinal2').style.display = "grid";
         document.getElementById('divisaoMediaFinal2Situacao').style.display = "grid";
