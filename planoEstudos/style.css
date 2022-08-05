@@ -1,0 +1,188 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+body{
+    background: url(img/fundoPagina.png) repeat-x fixed;
+    background-repeat: no-repeat;
+    background-size: cover;/* 
+    overflow-x: hidden; */
+}
+
+
+
+.topo{
+    text-align: center;
+    padding: 10px;
+}
+
+/*tabela*/
+.conteudoTabela{
+    margin: 0px auto;
+}
+.logo{
+    background-color: #ffffff;
+}
+#logoTopoCompleto{
+    text-align: center;
+    width: 100%;
+}
+.disciplina, .diaSemana, .Total{
+    background-color: #8E9494;
+    border: #BFC8C5 2px solid;
+    color: #ffffff;
+    padding: 2px;
+}
+
+td{
+    background-color: #ffffff;
+    border: #BFC8C5 2px solid;
+}
+
+.conteudoDisciplina{
+    align-items: center;
+    justify-content: center;
+    text-align: center;;
+
+}
+.nomeDisciplina{
+    height: 85px;
+    min-width: 100%;
+    max-width: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    color: #232323;
+    border: #ffffff;
+}
+
+
+.conteudoQuantidade{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.conteudoHora{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: #232323;
+    padding: 3px;
+}
+#conteudoHoraInicio, #conteudoHoraFim{
+    font-weight: bold;
+}
+.hora{
+    border: #BFC8C5 1px solid;
+    border-radius: 5px;
+    cursor: pointer;
+}
+input[type="time"]::-webkit-calendar-picker-indicator{
+    filter: invert(38%) sepia(13%) saturate(3907%) hue-rotate(8750448deg) brightness(95%) contrast(90%);
+    cursor: pointer;
+
+}
+/* input[type="time"]::-webkit-calendar-picker-indicator{
+    filter: invert(38%) sepia(13%) saturate(0%) hue-rotate(8750448deg) brightness(95%) contrast(90%);
+
+} */
+.conteudoTotal{
+    width: 70px;
+}
+
+.conteudoHoraTotal{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: auto;
+}
+.horaTotal{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: #ffffff;
+}
+
+
+.conteudoNomeHorasTotais{
+    padding: 5px;
+    font-weight: bolder;
+    text-align: right;
+    color: #232323;
+    background-color: #E5E8E7;
+}
+.conteudoInputHorasTotais{
+    text-align: center;
+}
+.horasTotais{
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: #ffffff;
+}
+
+
+#conteudoBotao{
+    text-align: center;
+    margin: 5px;
+}
+.botao{
+    padding: 5px 20px;
+    margin: 0px 10px;
+    color: #ffffff;
+    background-color: #D31C5B;
+    border: #D31C5B 1px solid;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
+
+#conteudoHoraInicio, #conteudoHoraFim{
+    max-width: 160px;
+}
+.hora{
+    max-width: 80px;
+}
+@media print{
+    @page{
+        size:landscape;
+    }
+    body{
+        -webkit-print-color-adjust: exact;
+    }
+    
+    .disciplinas{
+        width: 70px;
+    }
+    #conteudoHoraInicio, #conteudoHoraFim{
+        width: 150px;
+    }
+    .hora{
+        width: 70px;
+    }
+
+    .nomeDisciplina{
+        height: 100px;
+    }
+    /* .disciplina, .diaSemana, .Total, .disciplina, .diaSemana, .Total, .conteudoNomeHorasTotais, .conteudoHora, .nomeDisciplina{
+        color: #000000;
+    } */
+    /*.conteudoDiaSemana{
+        -webkit-print-color-adjust: exact;
+    } */
+
+    
+    /* input[type="time"]::-webkit-calendar-picker-indicator{
+        display: none;
+    } */
+        
+    #conteudoBotao{
+        display: none;
+    }
+}
