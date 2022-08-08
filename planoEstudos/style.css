@@ -5,10 +5,6 @@
     font-family: Arial;
 }
 body{
-	/* background:url(img/Background.png) repeat-x fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow-x: hidden; */
   background-color: #f7f7f7;
   font-family: Arial, Helvetica, sans-serif;
   word-wrap: break-word;
@@ -169,17 +165,6 @@ input[type="time"]::-webkit-calendar-picker-indicator{
     .nomeDisciplina{
         height: 100px;
     }
-    /* .disciplina, .diaSemana, .Total, .disciplina, .diaSemana, .Total, .conteudoNomeHorasTotais, .conteudoHora, .nomeDisciplina{
-        color: #000000;
-    } */
-    /*.conteudoDiaSemana{
-        -webkit-print-color-adjust: exact;
-    } */
-
-    
-    /* input[type="time"]::-webkit-calendar-picker-indicator{
-        display: none;
-    } */
         
     #conteudoBotao{
         display: none;
