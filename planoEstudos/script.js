@@ -1,307 +1,301 @@
 
 
-$('#linha13AVS .conteudoDiaSemana .hora').on('change',function(){
+$('#linha1 .conteudoDiaSemana .hora').on('change',function(){
     //Segunda
-    var horaInicioSegunda3AVSlinha1 = document.getElementById("horaInicioSegunda3AVSlinha1").value.split(':').map(Number);
-    var horaFimSegunda3AVSlinha1 = document.getElementById("horaFimSegunda3AVSlinha1").value.split(':').map(Number);
+    var horaInicioSegundalinha1 = document.getElementById("horaInicioSegundalinha1").value.split(':').map(Number);
+    var horaFimSegundalinha1 = document.getElementById("horaFimSegundalinha1").value.split(':').map(Number);
     //Terca
-    var horaInicioTerca3AVSlinha1 = document.getElementById("horaInicioTerca3AVSlinha1").value.split(':').map(Number);
-    var horaFimTerca3AVSlinha1 = document.getElementById("horaFimTerca3AVSlinha1").value.split(':').map(Number);
+    var horaInicioTercalinha1 = document.getElementById("horaInicioTercalinha1").value.split(':').map(Number);
+    var horaFimTercalinha1 = document.getElementById("horaFimTercalinha1").value.split(':').map(Number);
     //Quarta
-    var horaInicioQuarta3AVSlinha1 = document.getElementById("horaInicioQuarta3AVSlinha1").value.split(':').map(Number);
-    var horaFimQuarta3AVSlinha1 = document.getElementById("horaFimQuarta3AVSlinha1").value.split(':').map(Number);
+    var horaInicioQuartalinha1 = document.getElementById("horaInicioQuartalinha1").value.split(':').map(Number);
+    var horaFimQuartalinha1 = document.getElementById("horaFimQuartalinha1").value.split(':').map(Number);
     //Quinta
-    var horaInicioQuinta3AVSlinha1 = document.getElementById("horaInicioQuinta3AVSlinha1").value.split(':').map(Number);
-    var horaFimQuinta3AVSlinha1 = document.getElementById("horaFimQuinta3AVSlinha1").value.split(':').map(Number);
+    var horaInicioQuintalinha1 = document.getElementById("horaInicioQuintalinha1").value.split(':').map(Number);
+    var horaFimQuintalinha1 = document.getElementById("horaFimQuintalinha1").value.split(':').map(Number);
     //Sexta
-    var horaInicioSexta3AVSlinha1 = document.getElementById("horaInicioSexta3AVSlinha1").value.split(':').map(Number);
-    var horaFimSexta3AVSlinha1 = document.getElementById("horaFimSexta3AVSlinha1").value.split(':').map(Number);
+    var horaInicioSextalinha1 = document.getElementById("horaInicioSextalinha1").value.split(':').map(Number);
+    var horaFimSextalinha1 = document.getElementById("horaFimSextalinha1").value.split(':').map(Number);
     //Sabado
-    var horaInicioSabado3AVSlinha1 = document.getElementById("horaInicioSabado3AVSlinha1").value.split(':').map(Number);
-    var horaFimSabado3AVSlinha1 = document.getElementById("horaFimSabado3AVSlinha1").value.split(':').map(Number);
+    var horaInicioSabadolinha1 = document.getElementById("horaInicioSabadolinha1").value.split(':').map(Number);
+    var horaFimSabadolinha1 = document.getElementById("horaFimSabadolinha1").value.split(':').map(Number);
     //Domingo
-    var horaInicioDomingo3AVSlinha1 = document.getElementById("horaInicioDomingo3AVSlinha1").value.split(':').map(Number);
-    var horaFimDomingo3AVSlinha1 = document.getElementById("horaFimDomingo3AVSlinha1").value.split(':').map(Number);
+    var horaInicioDomingolinha1 = document.getElementById("horaInicioDomingolinha1").value.split(':').map(Number);
+    var horaFimDomingolinha1 = document.getElementById("horaFimDomingolinha1").value.split(':').map(Number);
 
 
-    var diferecaHoraTotal3AVSlinha1 = ((horaFimSegunda3AVSlinha1[0]*60 + horaFimSegunda3AVSlinha1[1])+(horaFimTerca3AVSlinha1[0]*60 + horaFimTerca3AVSlinha1[1])+(horaFimQuarta3AVSlinha1[0]*60 + horaFimQuarta3AVSlinha1[1])+(horaFimQuinta3AVSlinha1[0]*60 + horaFimQuinta3AVSlinha1[1])+(horaFimSexta3AVSlinha1[0]*60 + horaFimSexta3AVSlinha1[1])+(horaFimSabado3AVSlinha1[0]*60 + horaFimSabado3AVSlinha1[1])+(horaFimDomingo3AVSlinha1[0]*60 + horaFimDomingo3AVSlinha1[1]))-((horaInicioSegunda3AVSlinha1[0]*60 + horaInicioSegunda3AVSlinha1[1])+(horaInicioTerca3AVSlinha1[0]*60 + horaInicioTerca3AVSlinha1[1])+(horaInicioQuarta3AVSlinha1[0]*60 + horaInicioQuarta3AVSlinha1[1])+(horaInicioQuinta3AVSlinha1[0]*60 + horaInicioQuinta3AVSlinha1[1])+(horaInicioSexta3AVSlinha1[0]*60 + horaInicioSexta3AVSlinha1[1])+(horaInicioSabado3AVSlinha1[0]*60 + horaInicioSabado3AVSlinha1[1])+(horaInicioDomingo3AVSlinha1[0]*60 + horaInicioDomingo3AVSlinha1[1]))
-    if (diferecaHoraTotal3AVSlinha1 <= 0){
-        diferecaHoraTotal3AVSlinha1 = 0
+    var diferecaHoraTotallinha1 = ((horaFimSegundalinha1[0]*60 + horaFimSegundalinha1[1])+(horaFimTercalinha1[0]*60 + horaFimTercalinha1[1])+(horaFimQuartalinha1[0]*60 + horaFimQuartalinha1[1])+(horaFimQuintalinha1[0]*60 + horaFimQuintalinha1[1])+(horaFimSextalinha1[0]*60 + horaFimSextalinha1[1])+(horaFimSabadolinha1[0]*60 + horaFimSabadolinha1[1])+(horaFimDomingolinha1[0]*60 + horaFimDomingolinha1[1]))-((horaInicioSegundalinha1[0]*60 + horaInicioSegundalinha1[1])+(horaInicioTercalinha1[0]*60 + horaInicioTercalinha1[1])+(horaInicioQuartalinha1[0]*60 + horaInicioQuartalinha1[1])+(horaInicioQuintalinha1[0]*60 + horaInicioQuintalinha1[1])+(horaInicioSextalinha1[0]*60 + horaInicioSextalinha1[1])+(horaInicioSabadolinha1[0]*60 + horaInicioSabadolinha1[1])+(horaInicioDomingolinha1[0]*60 + horaInicioDomingolinha1[1]))
+    if (diferecaHoraTotallinha1 <= 0){
+        diferecaHoraTotallinha1 = 0
     }
 
 
-    var MMHoraTotal3AVSlinha1 = diferecaHoraTotal3AVSlinha1%60;MMHoraTotal3AVSlinha1.toString().length==1?MMHoraTotal3AVSlinha1="0"+MMHoraTotal3AVSlinha1:0;
-    if(isNaN(diferecaHoraTotal3AVSlinha1)) return;
+    var MMHoraTotallinha1 = diferecaHoraTotallinha1%60;MMHoraTotallinha1.toString().length==1?MMHoraTotallinha1="0"+MMHoraTotallinha1:0;
+    if(isNaN(diferecaHoraTotallinha1)) return;
     
 
-    resultadoHoraTotal3AVSlinha1 = Math.floor((diferecaHoraTotal3AVSlinha1)/60) + "Hora(s) e " + MMHoraTotal3AVSlinha1 + "minuto(s)";
+    resultadoHoraTotallinha1 = Math.floor((diferecaHoraTotallinha1)/60) + "Hora(s) e " + MMHoraTotallinha1 + "minuto(s)";
     
 
-    document.getElementById("horaTotal3AVSlinha1").value = resultadoHoraTotal3AVSlinha1;
+    document.getElementById("horaTotallinha1").value = resultadoHoraTotallinha1;
 });
 
-$('#linha23AVS .conteudoDiaSemana .hora').on('change',function(){
+$('#linha2 .conteudoDiaSemana .hora').on('change',function(){
     //Segunda
-    var horaInicioSegunda3AVSlinha2 = document.getElementById("horaInicioSegunda3AVSlinha2").value.split(':').map(Number);
-    var horaFimSegunda3AVSlinha2 = document.getElementById("horaFimSegunda3AVSlinha2").value.split(':').map(Number);
+    var horaInicioSegundalinha2 = document.getElementById("horaInicioSegundalinha2").value.split(':').map(Number);
+    var horaFimSegundalinha2 = document.getElementById("horaFimSegundalinha2").value.split(':').map(Number);
     //Terca
-    var horaInicioTerca3AVSlinha2 = document.getElementById("horaInicioTerca3AVSlinha2").value.split(':').map(Number);
-    var horaFimTerca3AVSlinha2 = document.getElementById("horaFimTerca3AVSlinha2").value.split(':').map(Number);
+    var horaInicioTercalinha2 = document.getElementById("horaInicioTercalinha2").value.split(':').map(Number);
+    var horaFimTercalinha2 = document.getElementById("horaFimTercalinha2").value.split(':').map(Number);
     //Quarta
-    var horaInicioQuarta3AVSlinha2 = document.getElementById("horaInicioQuarta3AVSlinha2").value.split(':').map(Number);
-    var horaFimQuarta3AVSlinha2 = document.getElementById("horaFimQuarta3AVSlinha2").value.split(':').map(Number);
+    var horaInicioQuartalinha2 = document.getElementById("horaInicioQuartalinha2").value.split(':').map(Number);
+    var horaFimQuartalinha2 = document.getElementById("horaFimQuartalinha2").value.split(':').map(Number);
     //Quinta
-    var horaInicioQuinta3AVSlinha2 = document.getElementById("horaInicioQuinta3AVSlinha2").value.split(':').map(Number);
-    var horaFimQuinta3AVSlinha2 = document.getElementById("horaFimQuinta3AVSlinha2").value.split(':').map(Number);
+    var horaInicioQuintalinha2 = document.getElementById("horaInicioQuintalinha2").value.split(':').map(Number);
+    var horaFimQuintalinha2 = document.getElementById("horaFimQuintalinha2").value.split(':').map(Number);
     //Sexta
-    var horaInicioSexta3AVSlinha2 = document.getElementById("horaInicioSexta3AVSlinha2").value.split(':').map(Number);
-    var horaFimSexta3AVSlinha2 = document.getElementById("horaFimSexta3AVSlinha2").value.split(':').map(Number);
+    var horaInicioSextalinha2 = document.getElementById("horaInicioSextalinha2").value.split(':').map(Number);
+    var horaFimSextalinha2 = document.getElementById("horaFimSextalinha2").value.split(':').map(Number);
     //Sabado
-    var horaInicioSabado3AVSlinha2 = document.getElementById("horaInicioSabado3AVSlinha2").value.split(':').map(Number);
-    var horaFimSabado3AVSlinha2 = document.getElementById("horaFimSabado3AVSlinha2").value.split(':').map(Number);
+    var horaInicioSabadolinha2 = document.getElementById("horaInicioSabadolinha2").value.split(':').map(Number);
+    var horaFimSabadolinha2 = document.getElementById("horaFimSabadolinha2").value.split(':').map(Number);
     //Domingo
-    var horaInicioDomingo3AVSlinha2 = document.getElementById("horaInicioDomingo3AVSlinha2").value.split(':').map(Number);
-    var horaFimDomingo3AVSlinha2 = document.getElementById("horaFimDomingo3AVSlinha2").value.split(':').map(Number);
+    var horaInicioDomingolinha2 = document.getElementById("horaInicioDomingolinha2").value.split(':').map(Number);
+    var horaFimDomingolinha2 = document.getElementById("horaFimDomingolinha2").value.split(':').map(Number);
 
 
-    var diferecaHoraTotal3AVSlinha2 = ((horaFimSegunda3AVSlinha2[0]*60 + horaFimSegunda3AVSlinha2[1])+(horaFimTerca3AVSlinha2[0]*60 + horaFimTerca3AVSlinha2[1])+(horaFimQuarta3AVSlinha2[0]*60 + horaFimQuarta3AVSlinha2[1])+(horaFimQuinta3AVSlinha2[0]*60 + horaFimQuinta3AVSlinha2[1])+(horaFimSexta3AVSlinha2[0]*60 + horaFimSexta3AVSlinha2[1])+(horaFimSabado3AVSlinha2[0]*60 + horaFimSabado3AVSlinha2[1])+(horaFimDomingo3AVSlinha2[0]*60 + horaFimDomingo3AVSlinha2[1]))-((horaInicioSegunda3AVSlinha2[0]*60 + horaInicioSegunda3AVSlinha2[1])+(horaInicioTerca3AVSlinha2[0]*60 + horaInicioTerca3AVSlinha2[1])+(horaInicioQuarta3AVSlinha2[0]*60 + horaInicioQuarta3AVSlinha2[1])+(horaInicioQuinta3AVSlinha2[0]*60 + horaInicioQuinta3AVSlinha2[1])+(horaInicioSexta3AVSlinha2[0]*60 + horaInicioSexta3AVSlinha2[1])+(horaInicioSabado3AVSlinha2[0]*60 + horaInicioSabado3AVSlinha2[1])+(horaInicioDomingo3AVSlinha2[0]*60 + horaInicioDomingo3AVSlinha2[1]))
-    if (diferecaHoraTotal3AVSlinha2 <= 0){
-        diferecaHoraTotal3AVSlinha2 = 0
+    var diferecaHoraTotallinha2 = ((horaFimSegundalinha2[0]*60 + horaFimSegundalinha2[1])+(horaFimTercalinha2[0]*60 + horaFimTercalinha2[1])+(horaFimQuartalinha2[0]*60 + horaFimQuartalinha2[1])+(horaFimQuintalinha2[0]*60 + horaFimQuintalinha2[1])+(horaFimSextalinha2[0]*60 + horaFimSextalinha2[1])+(horaFimSabadolinha2[0]*60 + horaFimSabadolinha2[1])+(horaFimDomingolinha2[0]*60 + horaFimDomingolinha2[1]))-((horaInicioSegundalinha2[0]*60 + horaInicioSegundalinha2[1])+(horaInicioTercalinha2[0]*60 + horaInicioTercalinha2[1])+(horaInicioQuartalinha2[0]*60 + horaInicioQuartalinha2[1])+(horaInicioQuintalinha2[0]*60 + horaInicioQuintalinha2[1])+(horaInicioSextalinha2[0]*60 + horaInicioSextalinha2[1])+(horaInicioSabadolinha2[0]*60 + horaInicioSabadolinha2[1])+(horaInicioDomingolinha2[0]*60 + horaInicioDomingolinha2[1]))
+    if (diferecaHoraTotallinha2 <= 0){
+        diferecaHoraTotallinha2 = 0
     }
 
 
-    var MMHoraTotal3AVSlinha2 = diferecaHoraTotal3AVSlinha2%60;MMHoraTotal3AVSlinha2.toString().length==1?MMHoraTotal3AVSlinha2="0"+MMHoraTotal3AVSlinha2:0;
-    if(isNaN(diferecaHoraTotal3AVSlinha2)) return;
+    var MMHoraTotallinha2 = diferecaHoraTotallinha2%60;MMHoraTotallinha2.toString().length==1?MMHoraTotallinha2="0"+MMHoraTotallinha2:0;
+    if(isNaN(diferecaHoraTotallinha2)) return;
     
 
-    resultadoHoraTotal3AVSlinha2 = Math.floor((diferecaHoraTotal3AVSlinha2)/60) + "Hora(s) e " + MMHoraTotal3AVSlinha2 + "minuto(s)";
+    resultadoHoraTotallinha2 = Math.floor((diferecaHoraTotallinha2)/60) + "Hora(s) e " + MMHoraTotallinha2 + "minuto(s)";
     
 
-    document.getElementById("horaTotal3AVSlinha2").value = resultadoHoraTotal3AVSlinha2;
+    document.getElementById("horaTotallinha2").value = resultadoHoraTotallinha2;
 });
 
-$('#linha33AVS .conteudoDiaSemana .hora').on('change',function(){
+$('#linha3 .conteudoDiaSemana .hora').on('change',function(){
     //Segunda
-    var horaInicioSegunda3AVSlinha3 = document.getElementById("horaInicioSegunda3AVSlinha3").value.split(':').map(Number);
-    var horaFimSegunda3AVSlinha3 = document.getElementById("horaFimSegunda3AVSlinha3").value.split(':').map(Number);
+    var horaInicioSegundalinha3 = document.getElementById("horaInicioSegundalinha3").value.split(':').map(Number);
+    var horaFimSegundalinha3 = document.getElementById("horaFimSegundalinha3").value.split(':').map(Number);
     //Terca
-    var horaInicioTerca3AVSlinha3 = document.getElementById("horaInicioTerca3AVSlinha3").value.split(':').map(Number);
-    var horaFimTerca3AVSlinha3 = document.getElementById("horaFimTerca3AVSlinha3").value.split(':').map(Number);
+    var horaInicioTercalinha3 = document.getElementById("horaInicioTercalinha3").value.split(':').map(Number);
+    var horaFimTercalinha3 = document.getElementById("horaFimTercalinha3").value.split(':').map(Number);
     //Quarta
-    var horaInicioQuarta3AVSlinha3 = document.getElementById("horaInicioQuarta3AVSlinha3").value.split(':').map(Number);
-    var horaFimQuarta3AVSlinha3 = document.getElementById("horaFimQuarta3AVSlinha3").value.split(':').map(Number);
+    var horaInicioQuartalinha3 = document.getElementById("horaInicioQuartalinha3").value.split(':').map(Number);
+    var horaFimQuartalinha3 = document.getElementById("horaFimQuartalinha3").value.split(':').map(Number);
     //Quinta
-    var horaInicioQuinta3AVSlinha3 = document.getElementById("horaInicioQuinta3AVSlinha3").value.split(':').map(Number);
-    var horaFimQuinta3AVSlinha3 = document.getElementById("horaFimQuinta3AVSlinha3").value.split(':').map(Number);
+    var horaInicioQuintalinha3 = document.getElementById("horaInicioQuintalinha3").value.split(':').map(Number);
+    var horaFimQuintalinha3 = document.getElementById("horaFimQuintalinha3").value.split(':').map(Number);
     //Sexta
-    var horaInicioSexta3AVSlinha3 = document.getElementById("horaInicioSexta3AVSlinha3").value.split(':').map(Number);
-    var horaFimSexta3AVSlinha3 = document.getElementById("horaFimSexta3AVSlinha3").value.split(':').map(Number);
+    var horaInicioSextalinha3 = document.getElementById("horaInicioSextalinha3").value.split(':').map(Number);
+    var horaFimSextalinha3 = document.getElementById("horaFimSextalinha3").value.split(':').map(Number);
     //Sabado
-    var horaInicioSabado3AVSlinha3 = document.getElementById("horaInicioSabado3AVSlinha3").value.split(':').map(Number);
-    var horaFimSabado3AVSlinha3 = document.getElementById("horaFimSabado3AVSlinha3").value.split(':').map(Number);
+    var horaInicioSabadolinha3 = document.getElementById("horaInicioSabadolinha3").value.split(':').map(Number);
+    var horaFimSabadolinha3 = document.getElementById("horaFimSabadolinha3").value.split(':').map(Number);
     //Domingo
-    var horaInicioDomingo3AVSlinha3 = document.getElementById("horaInicioDomingo3AVSlinha3").value.split(':').map(Number);
-    var horaFimDomingo3AVSlinha3 = document.getElementById("horaFimDomingo3AVSlinha3").value.split(':').map(Number);
+    var horaInicioDomingolinha3 = document.getElementById("horaInicioDomingolinha3").value.split(':').map(Number);
+    var horaFimDomingolinha3 = document.getElementById("horaFimDomingolinha3").value.split(':').map(Number);
 
 
-    var diferecaHoraTotal3AVSlinha3 = ((horaFimSegunda3AVSlinha3[0]*60 + horaFimSegunda3AVSlinha3[1])+(horaFimTerca3AVSlinha3[0]*60 + horaFimTerca3AVSlinha3[1])+(horaFimQuarta3AVSlinha3[0]*60 + horaFimQuarta3AVSlinha3[1])+(horaFimQuinta3AVSlinha3[0]*60 + horaFimQuinta3AVSlinha3[1])+(horaFimSexta3AVSlinha3[0]*60 + horaFimSexta3AVSlinha3[1])+(horaFimSabado3AVSlinha3[0]*60 + horaFimSabado3AVSlinha3[1])+(horaFimDomingo3AVSlinha3[0]*60 + horaFimDomingo3AVSlinha3[1]))-((horaInicioSegunda3AVSlinha3[0]*60 + horaInicioSegunda3AVSlinha3[1])+(horaInicioTerca3AVSlinha3[0]*60 + horaInicioTerca3AVSlinha3[1])+(horaInicioQuarta3AVSlinha3[0]*60 + horaInicioQuarta3AVSlinha3[1])+(horaInicioQuinta3AVSlinha3[0]*60 + horaInicioQuinta3AVSlinha3[1])+(horaInicioSexta3AVSlinha3[0]*60 + horaInicioSexta3AVSlinha3[1])+(horaInicioSabado3AVSlinha3[0]*60 + horaInicioSabado3AVSlinha3[1])+(horaInicioDomingo3AVSlinha3[0]*60 + horaInicioDomingo3AVSlinha3[1]))
-    if (diferecaHoraTotal3AVSlinha3 <= 0){
-        diferecaHoraTotal3AVSlinha3 = 0
+    var diferecaHoraTotallinha3 = ((horaFimSegundalinha3[0]*60 + horaFimSegundalinha3[1])+(horaFimTercalinha3[0]*60 + horaFimTercalinha3[1])+(horaFimQuartalinha3[0]*60 + horaFimQuartalinha3[1])+(horaFimQuintalinha3[0]*60 + horaFimQuintalinha3[1])+(horaFimSextalinha3[0]*60 + horaFimSextalinha3[1])+(horaFimSabadolinha3[0]*60 + horaFimSabadolinha3[1])+(horaFimDomingolinha3[0]*60 + horaFimDomingolinha3[1]))-((horaInicioSegundalinha3[0]*60 + horaInicioSegundalinha3[1])+(horaInicioTercalinha3[0]*60 + horaInicioTercalinha3[1])+(horaInicioQuartalinha3[0]*60 + horaInicioQuartalinha3[1])+(horaInicioQuintalinha3[0]*60 + horaInicioQuintalinha3[1])+(horaInicioSextalinha3[0]*60 + horaInicioSextalinha3[1])+(horaInicioSabadolinha3[0]*60 + horaInicioSabadolinha3[1])+(horaInicioDomingolinha3[0]*60 + horaInicioDomingolinha3[1]))
+    if (diferecaHoraTotallinha3 <= 0){
+        diferecaHoraTotallinha3 = 0
     }
 
 
-    var MMHoraTotal3AVSlinha3 = diferecaHoraTotal3AVSlinha3%60;MMHoraTotal3AVSlinha3.toString().length==1?MMHoraTotal3AVSlinha3="0"+MMHoraTotal3AVSlinha3:0;
-    if(isNaN(diferecaHoraTotal3AVSlinha3)) return;
+    var MMHoraTotallinha3 = diferecaHoraTotallinha3%60;MMHoraTotallinha3.toString().length==1?MMHoraTotallinha3="0"+MMHoraTotallinha3:0;
+    if(isNaN(diferecaHoraTotallinha3)) return;
     
 
-    resultadoHoraTotal3AVSlinha3 = Math.floor((diferecaHoraTotal3AVSlinha3)/60) + "Hora(s) e " + MMHoraTotal3AVSlinha3 + "minuto(s)";
+    resultadoHoraTotallinha3 = Math.floor((diferecaHoraTotallinha3)/60) + "Hora(s) e " + MMHoraTotallinha3 + "minuto(s)";
     
 
-    document.getElementById("horaTotal3AVSlinha3").value = resultadoHoraTotal3AVSlinha3;
+    document.getElementById("horaTotallinha3").value = resultadoHoraTotallinha3;
 });
 
-$('#linha43AVS .conteudoDiaSemana .hora').on('change',function(){
+$('#linha4 .conteudoDiaSemana .hora').on('change',function(){
     //Segunda
-    var horaInicioSegunda3AVSlinha4 = document.getElementById("horaInicioSegunda3AVSlinha4").value.split(':').map(Number);
-    var horaFimSegunda3AVSlinha4 = document.getElementById("horaFimSegunda3AVSlinha4").value.split(':').map(Number);
+    var horaInicioSegundalinha4 = document.getElementById("horaInicioSegundalinha4").value.split(':').map(Number);
+    var horaFimSegundalinha4 = document.getElementById("horaFimSegundalinha4").value.split(':').map(Number);
     //Terca
-    var horaInicioTerca3AVSlinha4 = document.getElementById("horaInicioTerca3AVSlinha4").value.split(':').map(Number);
-    var horaFimTerca3AVSlinha4 = document.getElementById("horaFimTerca3AVSlinha4").value.split(':').map(Number);
+    var horaInicioTercalinha4 = document.getElementById("horaInicioTercalinha4").value.split(':').map(Number);
+    var horaFimTercalinha4 = document.getElementById("horaFimTercalinha4").value.split(':').map(Number);
     //Quarta
-    var horaInicioQuarta3AVSlinha4 = document.getElementById("horaInicioQuarta3AVSlinha4").value.split(':').map(Number);
-    var horaFimQuarta3AVSlinha4 = document.getElementById("horaFimQuarta3AVSlinha4").value.split(':').map(Number);
+    var horaInicioQuartalinha4 = document.getElementById("horaInicioQuartalinha4").value.split(':').map(Number);
+    var horaFimQuartalinha4 = document.getElementById("horaFimQuartalinha4").value.split(':').map(Number);
     //Quinta
-    var horaInicioQuinta3AVSlinha4 = document.getElementById("horaInicioQuinta3AVSlinha4").value.split(':').map(Number);
-    var horaFimQuinta3AVSlinha4 = document.getElementById("horaFimQuinta3AVSlinha4").value.split(':').map(Number);
+    var horaInicioQuintalinha4 = document.getElementById("horaInicioQuintalinha4").value.split(':').map(Number);
+    var horaFimQuintalinha4 = document.getElementById("horaFimQuintalinha4").value.split(':').map(Number);
     //Sexta
-    var horaInicioSexta3AVSlinha4 = document.getElementById("horaInicioSexta3AVSlinha4").value.split(':').map(Number);
-    var horaFimSexta3AVSlinha4 = document.getElementById("horaFimSexta3AVSlinha4").value.split(':').map(Number);
+    var horaInicioSextalinha4 = document.getElementById("horaInicioSextalinha4").value.split(':').map(Number);
+    var horaFimSextalinha4 = document.getElementById("horaFimSextalinha4").value.split(':').map(Number);
     //Sabado
-    var horaInicioSabado3AVSlinha4 = document.getElementById("horaInicioSabado3AVSlinha4").value.split(':').map(Number);
-    var horaFimSabado3AVSlinha4 = document.getElementById("horaFimSabado3AVSlinha4").value.split(':').map(Number);
+    var horaInicioSabadolinha4 = document.getElementById("horaInicioSabadolinha4").value.split(':').map(Number);
+    var horaFimSabadolinha4 = document.getElementById("horaFimSabadolinha4").value.split(':').map(Number);
     //Domingo
-    var horaInicioDomingo3AVSlinha4 = document.getElementById("horaInicioDomingo3AVSlinha4").value.split(':').map(Number);
-    var horaFimDomingo3AVSlinha4 = document.getElementById("horaFimDomingo3AVSlinha4").value.split(':').map(Number);
+    var horaInicioDomingolinha4 = document.getElementById("horaInicioDomingolinha4").value.split(':').map(Number);
+    var horaFimDomingolinha4 = document.getElementById("horaFimDomingolinha4").value.split(':').map(Number);
 
 
-    var diferecaHoraTotal3AVSlinha4 = ((horaFimSegunda3AVSlinha4[0]*60 + horaFimSegunda3AVSlinha4[1])+(horaFimTerca3AVSlinha4[0]*60 + horaFimTerca3AVSlinha4[1])+(horaFimQuarta3AVSlinha4[0]*60 + horaFimQuarta3AVSlinha4[1])+(horaFimQuinta3AVSlinha4[0]*60 + horaFimQuinta3AVSlinha4[1])+(horaFimSexta3AVSlinha4[0]*60 + horaFimSexta3AVSlinha4[1])+(horaFimSabado3AVSlinha4[0]*60 + horaFimSabado3AVSlinha4[1])+(horaFimDomingo3AVSlinha4[0]*60 + horaFimDomingo3AVSlinha4[1]))-((horaInicioSegunda3AVSlinha4[0]*60 + horaInicioSegunda3AVSlinha4[1])+(horaInicioTerca3AVSlinha4[0]*60 + horaInicioTerca3AVSlinha4[1])+(horaInicioQuarta3AVSlinha4[0]*60 + horaInicioQuarta3AVSlinha4[1])+(horaInicioQuinta3AVSlinha4[0]*60 + horaInicioQuinta3AVSlinha4[1])+(horaInicioSexta3AVSlinha4[0]*60 + horaInicioSexta3AVSlinha4[1])+(horaInicioSabado3AVSlinha4[0]*60 + horaInicioSabado3AVSlinha4[1])+(horaInicioDomingo3AVSlinha4[0]*60 + horaInicioDomingo3AVSlinha4[1]))
-    if (diferecaHoraTotal3AVSlinha4 <= 0){
-        diferecaHoraTotal3AVSlinha4 = 0
+    var diferecaHoraTotallinha4 = ((horaFimSegundalinha4[0]*60 + horaFimSegundalinha4[1])+(horaFimTercalinha4[0]*60 + horaFimTercalinha4[1])+(horaFimQuartalinha4[0]*60 + horaFimQuartalinha4[1])+(horaFimQuintalinha4[0]*60 + horaFimQuintalinha4[1])+(horaFimSextalinha4[0]*60 + horaFimSextalinha4[1])+(horaFimSabadolinha4[0]*60 + horaFimSabadolinha4[1])+(horaFimDomingolinha4[0]*60 + horaFimDomingolinha4[1]))-((horaInicioSegundalinha4[0]*60 + horaInicioSegundalinha4[1])+(horaInicioTercalinha4[0]*60 + horaInicioTercalinha4[1])+(horaInicioQuartalinha4[0]*60 + horaInicioQuartalinha4[1])+(horaInicioQuintalinha4[0]*60 + horaInicioQuintalinha4[1])+(horaInicioSextalinha4[0]*60 + horaInicioSextalinha4[1])+(horaInicioSabadolinha4[0]*60 + horaInicioSabadolinha4[1])+(horaInicioDomingolinha4[0]*60 + horaInicioDomingolinha4[1]))
+    if (diferecaHoraTotallinha4 <= 0){
+        diferecaHoraTotallinha4 = 0
     }
 
 
-    var MMHoraTotal3AVSlinha4 = diferecaHoraTotal3AVSlinha4%60;MMHoraTotal3AVSlinha4.toString().length==1?MMHoraTotal3AVSlinha4="0"+MMHoraTotal3AVSlinha4:0;
-    if(isNaN(diferecaHoraTotal3AVSlinha4)) return;
+    var MMHoraTotallinha4 = diferecaHoraTotallinha4%60;MMHoraTotallinha4.toString().length==1?MMHoraTotallinha4="0"+MMHoraTotallinha4:0;
+    if(isNaN(diferecaHoraTotallinha4)) return;
     
 
-    resultadoHoraTotal3AVSlinha4 = Math.floor((diferecaHoraTotal3AVSlinha4)/60) + "Hora(s) e " + MMHoraTotal3AVSlinha4 + "minuto(s)";
+    resultadoHoraTotallinha4 = Math.floor((diferecaHoraTotallinha4)/60) + "Hora(s) e " + MMHoraTotallinha4 + "minuto(s)";
     
 
-    document.getElementById("horaTotal3AVSlinha4").value = resultadoHoraTotal3AVSlinha3;
-});
-
-
-$('#linha53AVS .conteudoDiaSemana .hora').on('change',function(){
-    //Segunda
-    var horaInicioSegunda3AVSlinha5 = document.getElementById("horaInicioSegunda3AVSlinha5").value.split(':').map(Number);
-    var horaFimSegunda3AVSlinha5 = document.getElementById("horaFimSegunda3AVSlinha5").value.split(':').map(Number);
-    //Terca
-    var horaInicioTerca3AVSlinha5 = document.getElementById("horaInicioTerca3AVSlinha5").value.split(':').map(Number);
-    var horaFimTerca3AVSlinha5 = document.getElementById("horaFimTerca3AVSlinha5").value.split(':').map(Number);
-    //Quarta
-    var horaInicioQuarta3AVSlinha5 = document.getElementById("horaInicioQuarta3AVSlinha5").value.split(':').map(Number);
-    var horaFimQuarta3AVSlinha5 = document.getElementById("horaFimQuarta3AVSlinha5").value.split(':').map(Number);
-    //Quinta
-    var horaInicioQuinta3AVSlinha5 = document.getElementById("horaInicioQuinta3AVSlinha5").value.split(':').map(Number);
-    var horaFimQuinta3AVSlinha5 = document.getElementById("horaFimQuinta3AVSlinha5").value.split(':').map(Number);
-    //Sexta
-    var horaInicioSexta3AVSlinha5 = document.getElementById("horaInicioSexta3AVSlinha5").value.split(':').map(Number);
-    var horaFimSexta3AVSlinha5 = document.getElementById("horaFimSexta3AVSlinha5").value.split(':').map(Number);
-    //Sabado
-    var horaInicioSabado3AVSlinha5 = document.getElementById("horaInicioSabado3AVSlinha5").value.split(':').map(Number);
-    var horaFimSabado3AVSlinha5 = document.getElementById("horaFimSabado3AVSlinha5").value.split(':').map(Number);
-    //Domingo
-    var horaInicioDomingo3AVSlinha5 = document.getElementById("horaInicioDomingo3AVSlinha5").value.split(':').map(Number);
-    var horaFimDomingo3AVSlinha5 = document.getElementById("horaFimDomingo3AVSlinha5").value.split(':').map(Number);
-
-
-    var diferecaHoraTotal3AVSlinha5 = ((horaFimSegunda3AVSlinha5[0]*60 + horaFimSegunda3AVSlinha5[1])+(horaFimTerca3AVSlinha5[0]*60 + horaFimTerca3AVSlinha5[1])+(horaFimQuarta3AVSlinha5[0]*60 + horaFimQuarta3AVSlinha5[1])+(horaFimQuinta3AVSlinha5[0]*60 + horaFimQuinta3AVSlinha5[1])+(horaFimSexta3AVSlinha5[0]*60 + horaFimSexta3AVSlinha5[1])+(horaFimSabado3AVSlinha5[0]*60 + horaFimSabado3AVSlinha5[1])+(horaFimDomingo3AVSlinha5[0]*60 + horaFimDomingo3AVSlinha5[1]))-((horaInicioSegunda3AVSlinha5[0]*60 + horaInicioSegunda3AVSlinha5[1])+(horaInicioTerca3AVSlinha5[0]*60 + horaInicioTerca3AVSlinha5[1])+(horaInicioQuarta3AVSlinha5[0]*60 + horaInicioQuarta3AVSlinha5[1])+(horaInicioQuinta3AVSlinha5[0]*60 + horaInicioQuinta3AVSlinha5[1])+(horaInicioSexta3AVSlinha5[0]*60 + horaInicioSexta3AVSlinha5[1])+(horaInicioSabado3AVSlinha5[0]*60 + horaInicioSabado3AVSlinha5[1])+(horaInicioDomingo3AVSlinha5[0]*60 + horaInicioDomingo3AVSlinha5[1]))
-    if (diferecaHoraTotal3AVSlinha5 <= 0){
-        diferecaHoraTotal3AVSlinha5 = 0
-    }
-
-
-    var MMHoraTotal3AVSlinha5 = diferecaHoraTotal3AVSlinha5%60;MMHoraTotal3AVSlinha5.toString().length==1?MMHoraTotal3AVSlinha5="0"+MMHoraTotal3AVSlinha5:0;
-    if(isNaN(diferecaHoraTotal3AVSlinha5)) return;
-    
-
-    resultadoHoraTotal3AVSlinha5 = Math.floor((diferecaHoraTotal3AVSlinha5)/60) + "Hora(s) e " + MMHoraTotal3AVSlinha5 + "minuto(s)";
-    
-
-    document.getElementById("horaTotal3AVSlinha5").value = resultadoHoraTotal3AVSlinha5;
+    document.getElementById("horaTotallinha4").value = resultadoHoraTotallinha3;
 });
 
 
-$('#linha63AVS .conteudoDiaSemana .hora').on('change',function(){
+$('#linha5 .conteudoDiaSemana .hora').on('change',function(){
     //Segunda
-    var horaInicioSegunda3AVSlinha6 = document.getElementById("horaInicioSegunda3AVSlinha6").value.split(':').map(Number);
-    var horaFimSegunda3AVSlinha6 = document.getElementById("horaFimSegunda3AVSlinha6").value.split(':').map(Number);
+    var horaInicioSegundalinha5 = document.getElementById("horaInicioSegundalinha5").value.split(':').map(Number);
+    var horaFimSegundalinha5 = document.getElementById("horaFimSegundalinha5").value.split(':').map(Number);
     //Terca
-    var horaInicioTerca3AVSlinha6 = document.getElementById("horaInicioTerca3AVSlinha6").value.split(':').map(Number);
-    var horaFimTerca3AVSlinha6 = document.getElementById("horaFimTerca3AVSlinha6").value.split(':').map(Number);
+    var horaInicioTercalinha5 = document.getElementById("horaInicioTercalinha5").value.split(':').map(Number);
+    var horaFimTercalinha5 = document.getElementById("horaFimTercalinha5").value.split(':').map(Number);
     //Quarta
-    var horaInicioQuarta3AVSlinha6 = document.getElementById("horaInicioQuarta3AVSlinha6").value.split(':').map(Number);
-    var horaFimQuarta3AVSlinha6 = document.getElementById("horaFimQuarta3AVSlinha6").value.split(':').map(Number);
+    var horaInicioQuartalinha5 = document.getElementById("horaInicioQuartalinha5").value.split(':').map(Number);
+    var horaFimQuartalinha5 = document.getElementById("horaFimQuartalinha5").value.split(':').map(Number);
     //Quinta
-    var horaInicioQuinta3AVSlinha6 = document.getElementById("horaInicioQuinta3AVSlinha6").value.split(':').map(Number);
-    var horaFimQuinta3AVSlinha6 = document.getElementById("horaFimQuinta3AVSlinha6").value.split(':').map(Number);
+    var horaInicioQuintalinha5 = document.getElementById("horaInicioQuintalinha5").value.split(':').map(Number);
+    var horaFimQuintalinha5 = document.getElementById("horaFimQuintalinha5").value.split(':').map(Number);
     //Sexta
-    var horaInicioSexta3AVSlinha6 = document.getElementById("horaInicioSexta3AVSlinha6").value.split(':').map(Number);
-    var horaFimSexta3AVSlinha6 = document.getElementById("horaFimSexta3AVSlinha6").value.split(':').map(Number);
+    var horaInicioSextalinha5 = document.getElementById("horaInicioSextalinha5").value.split(':').map(Number);
+    var horaFimSextalinha5 = document.getElementById("horaFimSextalinha5").value.split(':').map(Number);
     //Sabado
-    var horaInicioSabado3AVSlinha6 = document.getElementById("horaInicioSabado3AVSlinha6").value.split(':').map(Number);
-    var horaFimSabado3AVSlinha6 = document.getElementById("horaFimSabado3AVSlinha6").value.split(':').map(Number);
+    var horaInicioSabadolinha5 = document.getElementById("horaInicioSabadolinha5").value.split(':').map(Number);
+    var horaFimSabadolinha5 = document.getElementById("horaFimSabadolinha5").value.split(':').map(Number);
     //Domingo
-    var horaInicioDomingo3AVSlinha6 = document.getElementById("horaInicioDomingo3AVSlinha6").value.split(':').map(Number);
-    var horaFimDomingo3AVSlinha6 = document.getElementById("horaFimDomingo3AVSlinha6").value.split(':').map(Number);
+    var horaInicioDomingolinha5 = document.getElementById("horaInicioDomingolinha5").value.split(':').map(Number);
+    var horaFimDomingolinha5 = document.getElementById("horaFimDomingolinha5").value.split(':').map(Number);
 
 
-    var diferecaHoraTotal3AVSlinha6 = ((horaFimSegunda3AVSlinha6[0]*60 + horaFimSegunda3AVSlinha6[1])+(horaFimTerca3AVSlinha6[0]*60 + horaFimTerca3AVSlinha6[1])+(horaFimQuarta3AVSlinha6[0]*60 + horaFimQuarta3AVSlinha6[1])+(horaFimQuinta3AVSlinha6[0]*60 + horaFimQuinta3AVSlinha6[1])+(horaFimSexta3AVSlinha6[0]*60 + horaFimSexta3AVSlinha6[1])+(horaFimSabado3AVSlinha6[0]*60 + horaFimSabado3AVSlinha6[1])+(horaFimDomingo3AVSlinha6[0]*60 + horaFimDomingo3AVSlinha6[1]))-((horaInicioSegunda3AVSlinha6[0]*60 + horaInicioSegunda3AVSlinha6[1])+(horaInicioTerca3AVSlinha6[0]*60 + horaInicioTerca3AVSlinha6[1])+(horaInicioQuarta3AVSlinha6[0]*60 + horaInicioQuarta3AVSlinha6[1])+(horaInicioQuinta3AVSlinha6[0]*60 + horaInicioQuinta3AVSlinha6[1])+(horaInicioSexta3AVSlinha6[0]*60 + horaInicioSexta3AVSlinha6[1])+(horaInicioSabado3AVSlinha6[0]*60 + horaInicioSabado3AVSlinha6[1])+(horaInicioDomingo3AVSlinha6[0]*60 + horaInicioDomingo3AVSlinha6[1]))
-    if (diferecaHoraTotal3AVSlinha6 <= 0){
-        diferecaHoraTotal3AVSlinha6 = 0
+    var diferecaHoraTotallinha5 = ((horaFimSegundalinha5[0]*60 + horaFimSegundalinha5[1])+(horaFimTercalinha5[0]*60 + horaFimTercalinha5[1])+(horaFimQuartalinha5[0]*60 + horaFimQuartalinha5[1])+(horaFimQuintalinha5[0]*60 + horaFimQuintalinha5[1])+(horaFimSextalinha5[0]*60 + horaFimSextalinha5[1])+(horaFimSabadolinha5[0]*60 + horaFimSabadolinha5[1])+(horaFimDomingolinha5[0]*60 + horaFimDomingolinha5[1]))-((horaInicioSegundalinha5[0]*60 + horaInicioSegundalinha5[1])+(horaInicioTercalinha5[0]*60 + horaInicioTercalinha5[1])+(horaInicioQuartalinha5[0]*60 + horaInicioQuartalinha5[1])+(horaInicioQuintalinha5[0]*60 + horaInicioQuintalinha5[1])+(horaInicioSextalinha5[0]*60 + horaInicioSextalinha5[1])+(horaInicioSabadolinha5[0]*60 + horaInicioSabadolinha5[1])+(horaInicioDomingolinha5[0]*60 + horaInicioDomingolinha5[1]))
+    if (diferecaHoraTotallinha5 <= 0){
+        diferecaHoraTotallinha5 = 0
     }
 
 
-    var MMHoraTotal3AVSlinha6 = diferecaHoraTotal3AVSlinha6%60;MMHoraTotal3AVSlinha6.toString().length==1?MMHoraTotal3AVSlinha6="0"+MMHoraTotal3AVSlinha6:0;
-    if(isNaN(diferecaHoraTotal3AVSlinha6)) return;
+    var MMHoraTotallinha5 = diferecaHoraTotallinha5%60;MMHoraTotallinha5.toString().length==1?MMHoraTotallinha5="0"+MMHoraTotallinha5:0;
+    if(isNaN(diferecaHoraTotallinha5)) return;
     
 
-    resultadoHoraTotal3AVSlinha6 = Math.floor((diferecaHoraTotal3AVSlinha6)/60) + "Hora(s) e " + MMHoraTotal3AVSlinha6 + "minuto(s)";
+    resultadoHoraTotallinha5 = Math.floor((diferecaHoraTotallinha5)/60) + "Hora(s) e " + MMHoraTotallinha5 + "minuto(s)";
     
 
-    document.getElementById("horaTotal3AVSlinha6").value = resultadoHoraTotal3AVSlinha6;
+    document.getElementById("horaTotallinha5").value = resultadoHoraTotallinha5;
 });
 
 
-$('#linha73AVS .conteudoDiaSemana .hora').on('change',function(){
+$('#linha6 .conteudoDiaSemana .hora').on('change',function(){
     //Segunda
-    var horaInicioSegunda3AVSlinha7 = document.getElementById("horaInicioSegunda3AVSlinha7").value.split(':').map(Number);
-    var horaFimSegunda3AVSlinha7 = document.getElementById("horaFimSegunda3AVSlinha7").value.split(':').map(Number);
+    var horaInicioSegundalinha6 = document.getElementById("horaInicioSegundalinha6").value.split(':').map(Number);
+    var horaFimSegundalinha6 = document.getElementById("horaFimSegundalinha6").value.split(':').map(Number);
     //Terca
-    var horaInicioTerca3AVSlinha7 = document.getElementById("horaInicioTerca3AVSlinha7").value.split(':').map(Number);
-    var horaFimTerca3AVSlinha7 = document.getElementById("horaFimTerca3AVSlinha7").value.split(':').map(Number);
+    var horaInicioTercalinha6 = document.getElementById("horaInicioTercalinha6").value.split(':').map(Number);
+    var horaFimTercalinha6 = document.getElementById("horaFimTercalinha6").value.split(':').map(Number);
     //Quarta
-    var horaInicioQuarta3AVSlinha7 = document.getElementById("horaInicioQuarta3AVSlinha7").value.split(':').map(Number);
-    var horaFimQuarta3AVSlinha7 = document.getElementById("horaFimQuarta3AVSlinha7").value.split(':').map(Number);
+    var horaInicioQuartalinha6 = document.getElementById("horaInicioQuartalinha6").value.split(':').map(Number);
+    var horaFimQuartalinha6 = document.getElementById("horaFimQuartalinha6").value.split(':').map(Number);
     //Quinta
-    var horaInicioQuinta3AVSlinha7 = document.getElementById("horaInicioQuinta3AVSlinha7").value.split(':').map(Number);
-    var horaFimQuinta3AVSlinha7 = document.getElementById("horaFimQuinta3AVSlinha7").value.split(':').map(Number);
+    var horaInicioQuintalinha6 = document.getElementById("horaInicioQuintalinha6").value.split(':').map(Number);
+    var horaFimQuintalinha6 = document.getElementById("horaFimQuintalinha6").value.split(':').map(Number);
     //Sexta
-    var horaInicioSexta3AVSlinha7 = document.getElementById("horaInicioSexta3AVSlinha7").value.split(':').map(Number);
-    var horaFimSexta3AVSlinha7 = document.getElementById("horaFimSexta3AVSlinha7").value.split(':').map(Number);
+    var horaInicioSextalinha6 = document.getElementById("horaInicioSextalinha6").value.split(':').map(Number);
+    var horaFimSextalinha6 = document.getElementById("horaFimSextalinha6").value.split(':').map(Number);
     //Sabado
-    var horaInicioSabado3AVSlinha7 = document.getElementById("horaInicioSabado3AVSlinha7").value.split(':').map(Number);
-    var horaFimSabado3AVSlinha7 = document.getElementById("horaFimSabado3AVSlinha7").value.split(':').map(Number);
+    var horaInicioSabadolinha6 = document.getElementById("horaInicioSabadolinha6").value.split(':').map(Number);
+    var horaFimSabadolinha6 = document.getElementById("horaFimSabadolinha6").value.split(':').map(Number);
     //Domingo
-    var horaInicioDomingo3AVSlinha7 = document.getElementById("horaInicioDomingo3AVSlinha7").value.split(':').map(Number);
-    var horaFimDomingo3AVSlinha7 = document.getElementById("horaFimDomingo3AVSlinha7").value.split(':').map(Number);
+    var horaInicioDomingolinha6 = document.getElementById("horaInicioDomingolinha6").value.split(':').map(Number);
+    var horaFimDomingolinha6 = document.getElementById("horaFimDomingolinha6").value.split(':').map(Number);
 
 
-    var diferecaHoraTotal3AVSlinha7 = ((horaFimSegunda3AVSlinha7[0]*60 + horaFimSegunda3AVSlinha7[1])+(horaFimTerca3AVSlinha7[0]*60 + horaFimTerca3AVSlinha7[1])+(horaFimQuarta3AVSlinha7[0]*60 + horaFimQuarta3AVSlinha7[1])+(horaFimQuinta3AVSlinha7[0]*60 + horaFimQuinta3AVSlinha7[1])+(horaFimSexta3AVSlinha7[0]*60 + horaFimSexta3AVSlinha7[1])+(horaFimSabado3AVSlinha7[0]*60 + horaFimSabado3AVSlinha7[1])+(horaFimDomingo3AVSlinha7[0]*60 + horaFimDomingo3AVSlinha7[1]))-((horaInicioSegunda3AVSlinha7[0]*60 + horaInicioSegunda3AVSlinha7[1])+(horaInicioTerca3AVSlinha7[0]*60 + horaInicioTerca3AVSlinha7[1])+(horaInicioQuarta3AVSlinha7[0]*60 + horaInicioQuarta3AVSlinha7[1])+(horaInicioQuinta3AVSlinha7[0]*60 + horaInicioQuinta3AVSlinha7[1])+(horaInicioSexta3AVSlinha7[0]*60 + horaInicioSexta3AVSlinha7[1])+(horaInicioSabado3AVSlinha7[0]*60 + horaInicioSabado3AVSlinha7[1])+(horaInicioDomingo3AVSlinha7[0]*60 + horaInicioDomingo3AVSlinha7[1]))
-    if (diferecaHoraTotal3AVSlinha7 <= 0){
-        diferecaHoraTotal3AVSlinha7 = 0
+    var diferecaHoraTotallinha6 = ((horaFimSegundalinha6[0]*60 + horaFimSegundalinha6[1])+(horaFimTercalinha6[0]*60 + horaFimTercalinha6[1])+(horaFimQuartalinha6[0]*60 + horaFimQuartalinha6[1])+(horaFimQuintalinha6[0]*60 + horaFimQuintalinha6[1])+(horaFimSextalinha6[0]*60 + horaFimSextalinha6[1])+(horaFimSabadolinha6[0]*60 + horaFimSabadolinha6[1])+(horaFimDomingolinha6[0]*60 + horaFimDomingolinha6[1]))-((horaInicioSegundalinha6[0]*60 + horaInicioSegundalinha6[1])+(horaInicioTercalinha6[0]*60 + horaInicioTercalinha6[1])+(horaInicioQuartalinha6[0]*60 + horaInicioQuartalinha6[1])+(horaInicioQuintalinha6[0]*60 + horaInicioQuintalinha6[1])+(horaInicioSextalinha6[0]*60 + horaInicioSextalinha6[1])+(horaInicioSabadolinha6[0]*60 + horaInicioSabadolinha6[1])+(horaInicioDomingolinha6[0]*60 + horaInicioDomingolinha6[1]))
+    if (diferecaHoraTotallinha6 <= 0){
+        diferecaHoraTotallinha6 = 0
     }
 
 
-    var MMHoraTotal3AVSlinha7 = diferecaHoraTotal3AVSlinha7%60;MMHoraTotal3AVSlinha7.toString().length==1?MMHoraTotal3AVSlinha7="0"+MMHoraTotal3AVSlinha7:0;
-    if(isNaN(diferecaHoraTotal3AVSlinha7)) return;
+    var MMHoraTotallinha6 = diferecaHoraTotallinha6%60;MMHoraTotallinha6.toString().length==1?MMHoraTotallinha6="0"+MMHoraTotallinha6:0;
+    if(isNaN(diferecaHoraTotallinha6)) return;
     
 
-    resultadoHoraTotal3AVSlinha7 = Math.floor((diferecaHoraTotal3AVSlinha7)/60) + "Hora(s) e " + MMHoraTotal3AVSlinha7 + "minuto(s)";
+    resultadoHoraTotallinha6 = Math.floor((diferecaHoraTotallinha6)/60) + "Hora(s) e " + MMHoraTotallinha6 + "minuto(s)";
     
 
-    document.getElementById("horaTotal3AVSlinha7").value = resultadoHoraTotal3AVSlinha7;
+    document.getElementById("horaTotallinha6").value = resultadoHoraTotallinha6;
+});
+
+
+$('#linha7 .conteudoDiaSemana .hora').on('change',function(){
+    //Segunda
+    var horaInicioSegundalinha7 = document.getElementById("horaInicioSegundalinha7").value.split(':').map(Number);
+    var horaFimSegundalinha7 = document.getElementById("horaFimSegundalinha7").value.split(':').map(Number);
+    //Terca
+    var horaInicioTercalinha7 = document.getElementById("horaInicioTercalinha7").value.split(':').map(Number);
+    var horaFimTercalinha7 = document.getElementById("horaFimTercalinha7").value.split(':').map(Number);
+    //Quarta
+    var horaInicioQuartalinha7 = document.getElementById("horaInicioQuartalinha7").value.split(':').map(Number);
+    var horaFimQuartalinha7 = document.getElementById("horaFimQuartalinha7").value.split(':').map(Number);
+    //Quinta
+    var horaInicioQuintalinha7 = document.getElementById("horaInicioQuintalinha7").value.split(':').map(Number);
+    var horaFimQuintalinha7 = document.getElementById("horaFimQuintalinha7").value.split(':').map(Number);
+    //Sexta
+    var horaInicioSextalinha7 = document.getElementById("horaInicioSextalinha7").value.split(':').map(Number);
+    var horaFimSextalinha7 = document.getElementById("horaFimSextalinha7").value.split(':').map(Number);
+    //Sabado
+    var horaInicioSabadolinha7 = document.getElementById("horaInicioSabadolinha7").value.split(':').map(Number);
+    var horaFimSabadolinha7 = document.getElementById("horaFimSabadolinha7").value.split(':').map(Number);
+    //Domingo
+    var horaInicioDomingolinha7 = document.getElementById("horaInicioDomingolinha7").value.split(':').map(Number);
+    var horaFimDomingolinha7 = document.getElementById("horaFimDomingolinha7").value.split(':').map(Number);
+
+
+    var diferecaHoraTotallinha7 = ((horaFimSegundalinha7[0]*60 + horaFimSegundalinha7[1])+(horaFimTercalinha7[0]*60 + horaFimTercalinha7[1])+(horaFimQuartalinha7[0]*60 + horaFimQuartalinha7[1])+(horaFimQuintalinha7[0]*60 + horaFimQuintalinha7[1])+(horaFimSextalinha7[0]*60 + horaFimSextalinha7[1])+(horaFimSabadolinha7[0]*60 + horaFimSabadolinha7[1])+(horaFimDomingolinha7[0]*60 + horaFimDomingolinha7[1]))-((horaInicioSegundalinha7[0]*60 + horaInicioSegundalinha7[1])+(horaInicioTercalinha7[0]*60 + horaInicioTercalinha7[1])+(horaInicioQuartalinha7[0]*60 + horaInicioQuartalinha7[1])+(horaInicioQuintalinha7[0]*60 + horaInicioQuintalinha7[1])+(horaInicioSextalinha7[0]*60 + horaInicioSextalinha7[1])+(horaInicioSabadolinha7[0]*60 + horaInicioSabadolinha7[1])+(horaInicioDomingolinha7[0]*60 + horaInicioDomingolinha7[1]))
+    if (diferecaHoraTotallinha7 <= 0){
+        diferecaHoraTotallinha7 = 0
+    }
+
+
+    var MMHoraTotallinha7 = diferecaHoraTotallinha7%60;MMHoraTotallinha7.toString().length==1?MMHoraTotallinha7="0"+MMHoraTotallinha7:0;
+    if(isNaN(diferecaHoraTotallinha7)) return;
+    
+
+    resultadoHoraTotallinha7 = Math.floor((diferecaHoraTotallinha7)/60) + "Hora(s) e " + MMHoraTotallinha7 + "minuto(s)";
+    
+
+    document.getElementById("horaTotallinha7").value = resultadoHoraTotallinha7;
 });
 
 
 
 
 $('.hora').on('change',function(){
-    var horaTotal3AVSlinha1 = document.getElementById("horaTotal3AVSlinha1").value.replace("minuto(s)","").split('Hora(s) e ').map(Number);
-    var horaTotal3AVSlinha2 = document.getElementById("horaTotal3AVSlinha2").value.replace("minuto(s)","").split('Hora(s) e ').map(Number);
-    var horaTotal3AVSlinha3 = document.getElementById("horaTotal3AVSlinha3").value.replace("minuto(s)","").split('Hora(s) e ').map(Number);
-    var horaTotal3AVSlinha4 = document.getElementById("horaTotal3AVSlinha4").value.replace("minuto(s)","").split('Hora(s) e ').map(Number);
-    var horaTotal3AVSlinha5 = document.getElementById("horaTotal3AVSlinha5").value.replace("minuto(s)","").split('Hora(s) e ').map(Number);
-    var horaTotal3AVSlinha5 = document.getElementById("horaTotal3AVSlinha5").value.replace("minuto(s)","").split('Hora(s) e ').map(Number);
-    var horaTotal3AVSlinha5 = document.getElementById("horaTotal3AVSlinha5").value.replace("minuto(s)","").split('Hora(s) e ').map(Number);
+    var horaTotallinha1 = document.getElementById("horaTotallinha1").value.replace("minuto(s)","").split('Hora(s) e ').map(Number);
+    var horaTotallinha2 = document.getElementById("horaTotallinha2").value.replace("minuto(s)","").split('Hora(s) e ').map(Number);
+    var horaTotallinha3 = document.getElementById("horaTotallinha3").value.replace("minuto(s)","").split('Hora(s) e ').map(Number);
+    var horaTotallinha4 = document.getElementById("horaTotallinha4").value.replace("minuto(s)","").split('Hora(s) e ').map(Number);
+    var horaTotallinha5 = document.getElementById("horaTotallinha5").value.replace("minuto(s)","").split('Hora(s) e ').map(Number);
+    var horaTotallinha6 = document.getElementById("horaTotallinha6").value.replace("minuto(s)","").split('Hora(s) e ').map(Number);
+    var horaTotallinha7 = document.getElementById("horaTotallinha7").value.replace("minuto(s)","").split('Hora(s) e ').map(Number);
 
-    var horaTotalNUlinha1 = document.getElementById("horaTotalNUlinha1").value.replace("minuto(s)","").split('Hora(s) e ').map(Number);
-    var horaTotalNUlinha2 = document.getElementById("horaTotalNUlinha2").value.replace("minuto(s)","").split('Hora(s) e ').map(Number);
-    var horaTotalNUlinha3 = document.getElementById("horaTotalNUlinha3").value.replace("minuto(s)","").split('Hora(s) e ').map(Number);
-    var horaTotalNUlinha4 = document.getElementById("horaTotalNUlinha4").value.replace("minuto(s)","").split('Hora(s) e ').map(Number);
-    var horaTotalNUlinha5 = document.getElementById("horaTotalNUlinha5").value.replace("minuto(s)","").split('Hora(s) e ').map(Number);
-
-    var horasTotais = (horaTotal3AVSlinha1[0]*60 + horaTotal3AVSlinha1[1]) + (horaTotal3AVSlinha2[0]*60 + horaTotal3AVSlinha2[1]) + (horaTotal3AVSlinha3[0]*60 + horaTotal3AVSlinha3[1]) + (horaTotal3AVSlinha4[0]*60 + horaTotal3AVSlinha4[1]) + (horaTotal3AVSlinha5[0]*60 + horaTotal3AVSlinha5[1]) + (horaTotalNUlinha1[0]*60 + horaTotalNUlinha1[1]) + (horaTotalNUlinha2[0]*60 + horaTotalNUlinha2[1]) + (horaTotalNUlinha3[0]*60 + horaTotalNUlinha3[1]) + (horaTotalNUlinha4[0]*60 + horaTotalNUlinha4[1]) + (horaTotalNUlinha5[0]*60 + horaTotalNUlinha5[1]);
+    var horasTotais = (horaTotallinha1[0]*60 + horaTotallinha1[1]) + (horaTotallinha2[0]*60 + horaTotallinha2[1]) + (horaTotallinha3[0]*60 + horaTotallinha3[1]) + (horaTotallinha4[0]*60 + horaTotallinha4[1]) + (horaTotallinha5[0]*60 + horaTotallinha5[1]) + (horaTotallinha6[0]*60 + horaTotallinha6[1]) + (horaTotallinha7[0]*60 + horaTotallinha7[1]);
 
 
     var MMHorasTotais = horasTotais%60;MMHorasTotais.toString().length==1?MMHorasTotais="0"+MMHorasTotais:0;
@@ -316,1060 +310,743 @@ $('.hora').on('change',function(){
 
 
 
-$('#conteudoDiaSemanaSegunda3AVSlinha1 .hora').on('change',function(){
-    var horaInicioSegunda3AVSlinha1 = document.getElementById("horaInicioSegunda3AVSlinha1");
-    var horaFimSegunda3AVSlinha1 = document.getElementById("horaFimSegunda3AVSlinha1");
+$('#conteudoDiaSemanaSegundalinha1 .hora').on('change',function(){
+    var horaInicioSegundalinha1 = document.getElementById("horaInicioSegundalinha1");
+    var horaFimSegundalinha1 = document.getElementById("horaFimSegundalinha1");
     
-    if (horaInicioSegunda3AVSlinha1.value == "00:00" && horaFimSegunda3AVSlinha1.value == "00:00"){
-    document.querySelector('#conteudoDiaSemanaSegunda3AVSlinha1').style.backgroundColor = "#ffffff";
+    if (horaInicioSegundalinha1.value == "00:00" && horaFimSegundalinha1.value == "00:00"){
+    document.querySelector('#conteudoDiaSemanaSegundalinha1').style.backgroundColor = "#ffffff";
     }
-    else if (horaInicioSegunda3AVSlinha1.value == "" || horaFimSegunda3AVSlinha1.value == ""){
-        document.querySelector('#conteudoDiaSemanaSegunda3AVSlinha1').style.backgroundColor = "#ffffff";
+    else if (horaInicioSegundalinha1.value == "" || horaFimSegundalinha1.value == ""){
+        document.querySelector('#conteudoDiaSemanaSegundalinha1').style.backgroundColor = "#ffffff";
     }
     else {
-        document.querySelector('#conteudoDiaSemanaSegunda3AVSlinha1').style.backgroundColor = "#E5E8E7";
+        document.querySelector('#conteudoDiaSemanaSegundalinha1').style.backgroundColor = "#E5E8E7";
     }
 });
 
-$('#conteudoDiaSemanaTerca3AVSlinha1 .hora').on('change',function(){
-    var horaInicioTerca3AVSlinha1 = document.getElementById("horaInicioTerca3AVSlinha1");
-    var horaFimTerca3AVSlinha1 = document.getElementById("horaFimTerca3AVSlinha1");
+$('#conteudoDiaSemanaTercalinha1 .hora').on('change',function(){
+    var horaInicioTercalinha1 = document.getElementById("horaInicioTercalinha1");
+    var horaFimTercalinha1 = document.getElementById("horaFimTercalinha1");
     
-    if (horaInicioTerca3AVSlinha1.value == "00:00" && horaFimTerca3AVSlinha1.value == "00:00"){
-    document.querySelector('#conteudoDiaSemanaTerca3AVSlinha1').style.backgroundColor = "#ffffff";
+    if (horaInicioTercalinha1.value == "00:00" && horaFimTercalinha1.value == "00:00"){
+    document.querySelector('#conteudoDiaSemanaTercalinha1').style.backgroundColor = "#ffffff";
     }
-    else if (horaInicioTerca3AVSlinha1.value == "" || horaFimTerca3AVSlinha1.value == ""){
-        document.querySelector('#conteudoDiaSemanaTerca3AVSlinha1').style.backgroundColor = "#ffffff";
+    else if (horaInicioTercalinha1.value == "" || horaFimTercalinha1.value == ""){
+        document.querySelector('#conteudoDiaSemanaTercalinha1').style.backgroundColor = "#ffffff";
     }
     else {
-        document.querySelector('#conteudoDiaSemanaTerca3AVSlinha1').style.backgroundColor = "#E5E8E7";
+        document.querySelector('#conteudoDiaSemanaTercalinha1').style.backgroundColor = "#E5E8E7";
     }
 });
 
-$('#conteudoDiaSemanaQuarta3AVSlinha1 .hora').on('change',function(){
-    var horaInicioQuarta3AVSlinha1 = document.getElementById("horaInicioQuarta3AVSlinha1");
-    var horaFimQuarta3AVSlinha1 = document.getElementById("horaFimQuarta3AVSlinha1");
+$('#conteudoDiaSemanaQuartalinha1 .hora').on('change',function(){
+    var horaInicioQuartalinha1 = document.getElementById("horaInicioQuartalinha1");
+    var horaFimQuartalinha1 = document.getElementById("horaFimQuartalinha1");
     
-    if (horaInicioQuarta3AVSlinha1.value == "00:00" && horaFimQuarta3AVSlinha1.value == "00:00"){
-    document.querySelector('#conteudoDiaSemanaQuarta3AVSlinha1').style.backgroundColor = "#ffffff";
+    if (horaInicioQuartalinha1.value == "00:00" && horaFimQuartalinha1.value == "00:00"){
+    document.querySelector('#conteudoDiaSemanaQuartalinha1').style.backgroundColor = "#ffffff";
     }
-    else if (horaInicioQuarta3AVSlinha1.value == "" || horaFimQuarta3AVSlinha1.value == ""){
-        document.querySelector('#conteudoDiaSemanaQuarta3AVSlinha1').style.backgroundColor = "#ffffff";
+    else if (horaInicioQuartalinha1.value == "" || horaFimQuartalinha1.value == ""){
+        document.querySelector('#conteudoDiaSemanaQuartalinha1').style.backgroundColor = "#ffffff";
     }
     else {
-        document.querySelector('#conteudoDiaSemanaQuarta3AVSlinha1').style.backgroundColor = "#E5E8E7";
+        document.querySelector('#conteudoDiaSemanaQuartalinha1').style.backgroundColor = "#E5E8E7";
     }
 });
 
-$('#conteudoDiaSemanaQuinta3AVSlinha1 .hora').on('change',function(){
-    var horaInicioQuinta3AVSlinha1 = document.getElementById("horaInicioQuinta3AVSlinha1");
-    var horaFimQuinta3AVSlinha1 = document.getElementById("horaFimQuinta3AVSlinha1");
+$('#conteudoDiaSemanaQuintalinha1 .hora').on('change',function(){
+    var horaInicioQuintalinha1 = document.getElementById("horaInicioQuintalinha1");
+    var horaFimQuintalinha1 = document.getElementById("horaFimQuintalinha1");
     
-    if (horaInicioQuinta3AVSlinha1.value == "00:00" && horaFimQuinta3AVSlinha1.value == "00:00"){
-    document.querySelector('#conteudoDiaSemanaQuinta3AVSlinha1').style.backgroundColor = "#ffffff";
+    if (horaInicioQuintalinha1.value == "00:00" && horaFimQuintalinha1.value == "00:00"){
+    document.querySelector('#conteudoDiaSemanaQuintalinha1').style.backgroundColor = "#ffffff";
     }
-    else if (horaInicioQuinta3AVSlinha1.value == "" || horaFimQuinta3AVSlinha1.value == ""){
-        document.querySelector('#conteudoDiaSemanaQuinta3AVSlinha1').style.backgroundColor = "#ffffff";
+    else if (horaInicioQuintalinha1.value == "" || horaFimQuintalinha1.value == ""){
+        document.querySelector('#conteudoDiaSemanaQuintalinha1').style.backgroundColor = "#ffffff";
     }
     else {
-        document.querySelector('#conteudoDiaSemanaQuinta3AVSlinha1').style.backgroundColor = "#E5E8E7";
+        document.querySelector('#conteudoDiaSemanaQuintalinha1').style.backgroundColor = "#E5E8E7";
     }
 });
 
-$('#conteudoDiaSemanaSexta3AVSlinha1 .hora').on('change',function(){
-    var horaInicioSexta3AVSlinha1 = document.getElementById("horaInicioSexta3AVSlinha1");
-    var horaFimSexta3AVSlinha1 = document.getElementById("horaFimSexta3AVSlinha1");
+$('#conteudoDiaSemanaSextalinha1 .hora').on('change',function(){
+    var horaInicioSextalinha1 = document.getElementById("horaInicioSextalinha1");
+    var horaFimSextalinha1 = document.getElementById("horaFimSextalinha1");
     
-    if (horaInicioSexta3AVSlinha1.value == "00:00" && horaFimSexta3AVSlinha1.value == "00:00"){
-    document.querySelector('#conteudoDiaSemanaSexta3AVSlinha1').style.backgroundColor = "#ffffff";
+    if (horaInicioSextalinha1.value == "00:00" && horaFimSextalinha1.value == "00:00"){
+    document.querySelector('#conteudoDiaSemanaSextalinha1').style.backgroundColor = "#ffffff";
     }
-    else if (horaInicioSexta3AVSlinha1.value == "" || horaFimSexta3AVSlinha1.value == ""){
-        document.querySelector('#conteudoDiaSemanaSexta3AVSlinha1').style.backgroundColor = "#ffffff";
+    else if (horaInicioSextalinha1.value == "" || horaFimSextalinha1.value == ""){
+        document.querySelector('#conteudoDiaSemanaSextalinha1').style.backgroundColor = "#ffffff";
     }
     else {
-        document.querySelector('#conteudoDiaSemanaSexta3AVSlinha1').style.backgroundColor = "#E5E8E7";
+        document.querySelector('#conteudoDiaSemanaSextalinha1').style.backgroundColor = "#E5E8E7";
     }
 });
 
-$('#conteudoDiaSemanaSabado3AVSlinha1 .hora').on('change',function(){
-    var horaInicioSabado3AVSlinha1 = document.getElementById("horaInicioSabado3AVSlinha1");
-    var horaFimSabado3AVSlinha1 = document.getElementById("horaFimSabado3AVSlinha1");
+$('#conteudoDiaSemanaSabadolinha1 .hora').on('change',function(){
+    var horaInicioSabadolinha1 = document.getElementById("horaInicioSabadolinha1");
+    var horaFimSabadolinha1 = document.getElementById("horaFimSabadolinha1");
     
-    if (horaInicioSabado3AVSlinha1.value == "00:00" && horaFimSabado3AVSlinha1.value == "00:00"){
-    document.querySelector('#conteudoDiaSemanaSabado3AVSlinha1').style.backgroundColor = "#ffffff";
+    if (horaInicioSabadolinha1.value == "00:00" && horaFimSabadolinha1.value == "00:00"){
+    document.querySelector('#conteudoDiaSemanaSabadolinha1').style.backgroundColor = "#ffffff";
     }
-    else if (horaInicioSabado3AVSlinha1.value == "" || horaFimSabado3AVSlinha1.value == ""){
-        document.querySelector('#conteudoDiaSemanaSabado3AVSlinha1').style.backgroundColor = "#ffffff";
+    else if (horaInicioSabadolinha1.value == "" || horaFimSabadolinha1.value == ""){
+        document.querySelector('#conteudoDiaSemanaSabadolinha1').style.backgroundColor = "#ffffff";
     }
     else {
-        document.querySelector('#conteudoDiaSemanaSabado3AVSlinha1').style.backgroundColor = "#E5E8E7";
+        document.querySelector('#conteudoDiaSemanaSabadolinha1').style.backgroundColor = "#E5E8E7";
     }
 });
 
-$('#conteudoDiaSemanaDomingo3AVSlinha1 .hora').on('change',function(){
-    var horaInicioDomingo3AVSlinha1 = document.getElementById("horaInicioDomingo3AVSlinha1");
-    var horaFimDomingo3AVSlinha1 = document.getElementById("horaFimDomingo3AVSlinha1");
+$('#conteudoDiaSemanaDomingolinha1 .hora').on('change',function(){
+    var horaInicioDomingolinha1 = document.getElementById("horaInicioDomingolinha1");
+    var horaFimDomingolinha1 = document.getElementById("horaFimDomingolinha1");
     
-    if (horaInicioDomingo3AVSlinha1.value == "00:00" && horaFimDomingo3AVSlinha1.value == "00:00"){
-    document.querySelector('#conteudoDiaSemanaDomingo3AVSlinha1').style.backgroundColor = "#ffffff";
+    if (horaInicioDomingolinha1.value == "00:00" && horaFimDomingolinha1.value == "00:00"){
+    document.querySelector('#conteudoDiaSemanaDomingolinha1').style.backgroundColor = "#ffffff";
     }
-    else if (horaInicioDomingo3AVSlinha1.value == "" || horaFimDomingo3AVSlinha1.value == ""){
-        document.querySelector('#conteudoDiaSemanaDomingo3AVSlinha1').style.backgroundColor = "#ffffff";
+    else if (horaInicioDomingolinha1.value == "" || horaFimDomingolinha1.value == ""){
+        document.querySelector('#conteudoDiaSemanaDomingolinha1').style.backgroundColor = "#ffffff";
     }
     else {
-        document.querySelector('#conteudoDiaSemanaDomingo3AVSlinha1').style.backgroundColor = "#E5E8E7";
+        document.querySelector('#conteudoDiaSemanaDomingolinha1').style.backgroundColor = "#E5E8E7";
     }
 });
 
 
-$('#conteudoDiaSemanaSegunda3AVSlinha2 .hora').on('change',function(){
-    var horaInicioSegunda3AVSlinha2 = document.getElementById("horaInicioSegunda3AVSlinha2");
-    var horaFimSegunda3AVSlinha2 = document.getElementById("horaFimSegunda3AVSlinha2");
+$('#conteudoDiaSemanaSegundalinha2 .hora').on('change',function(){
+    var horaInicioSegundalinha2 = document.getElementById("horaInicioSegundalinha2");
+    var horaFimSegundalinha2 = document.getElementById("horaFimSegundalinha2");
     
-    if (horaInicioSegunda3AVSlinha2.value == "00:00" && horaFimSegunda3AVSlinha2.value == "00:00"){
-    document.querySelector('#conteudoDiaSemanaSegunda3AVSlinha2').style.backgroundColor = "#ffffff";
+    if (horaInicioSegundalinha2.value == "00:00" && horaFimSegundalinha2.value == "00:00"){
+    document.querySelector('#conteudoDiaSemanaSegundalinha2').style.backgroundColor = "#ffffff";
     }
-    else if (horaInicioSegunda3AVSlinha2.value == "" || horaFimSegunda3AVSlinha2.value == ""){
-        document.querySelector('#conteudoDiaSemanaSegunda3AVSlinha2').style.backgroundColor = "#ffffff";
+    else if (horaInicioSegundalinha2.value == "" || horaFimSegundalinha2.value == ""){
+        document.querySelector('#conteudoDiaSemanaSegundalinha2').style.backgroundColor = "#ffffff";
     }
     else {
-        document.querySelector('#conteudoDiaSemanaSegunda3AVSlinha2').style.backgroundColor = "#E5E8E7";
+        document.querySelector('#conteudoDiaSemanaSegundalinha2').style.backgroundColor = "#E5E8E7";
     }
 });
 
-$('#conteudoDiaSemanaTerca3AVSlinha2 .hora').on('change',function(){
-    var horaInicioTerca3AVSlinha2 = document.getElementById("horaInicioTerca3AVSlinha2");
-    var horaFimTerca3AVSlinha2 = document.getElementById("horaFimTerca3AVSlinha2");
+$('#conteudoDiaSemanaTercalinha2 .hora').on('change',function(){
+    var horaInicioTercalinha2 = document.getElementById("horaInicioTercalinha2");
+    var horaFimTercalinha2 = document.getElementById("horaFimTercalinha2");
     
-    if (horaInicioTerca3AVSlinha2.value == "00:00" && horaFimTerca3AVSlinha2.value == "00:00"){
-    document.querySelector('#conteudoDiaSemanaTerca3AVSlinha2').style.backgroundColor = "#ffffff";
+    if (horaInicioTercalinha2.value == "00:00" && horaFimTercalinha2.value == "00:00"){
+    document.querySelector('#conteudoDiaSemanaTercalinha2').style.backgroundColor = "#ffffff";
     }
-    else if (horaInicioTerca3AVSlinha2.value == "" || horaFimTerca3AVSlinha2.value == ""){
-        document.querySelector('#conteudoDiaSemanaTerca3AVSlinha2').style.backgroundColor = "#ffffff";
+    else if (horaInicioTercalinha2.value == "" || horaFimTercalinha2.value == ""){
+        document.querySelector('#conteudoDiaSemanaTercalinha2').style.backgroundColor = "#ffffff";
     }
     else {
-        document.querySelector('#conteudoDiaSemanaTerca3AVSlinha2').style.backgroundColor = "#E5E8E7";
+        document.querySelector('#conteudoDiaSemanaTercalinha2').style.backgroundColor = "#E5E8E7";
     }
 });
 
-$('#conteudoDiaSemanaQuarta3AVSlinha2 .hora').on('change',function(){
-    var horaInicioQuarta3AVSlinha2 = document.getElementById("horaInicioQuarta3AVSlinha2");
-    var horaFimQuarta3AVSlinha2 = document.getElementById("horaFimQuarta3AVSlinha2");
+$('#conteudoDiaSemanaQuartalinha2 .hora').on('change',function(){
+    var horaInicioQuartalinha2 = document.getElementById("horaInicioQuartalinha2");
+    var horaFimQuartalinha2 = document.getElementById("horaFimQuartalinha2");
     
-    if (horaInicioQuarta3AVSlinha2.value == "00:00" && horaFimQuarta3AVSlinha2.value == "00:00"){
-    document.querySelector('#conteudoDiaSemanaQuarta3AVSlinha2').style.backgroundColor = "#ffffff";
+    if (horaInicioQuartalinha2.value == "00:00" && horaFimQuartalinha2.value == "00:00"){
+    document.querySelector('#conteudoDiaSemanaQuartalinha2').style.backgroundColor = "#ffffff";
     }
-    else if (horaInicioQuarta3AVSlinha2.value == "" || horaFimQuarta3AVSlinha2.value == ""){
-        document.querySelector('#conteudoDiaSemanaQuarta3AVSlinha2').style.backgroundColor = "#ffffff";
+    else if (horaInicioQuartalinha2.value == "" || horaFimQuartalinha2.value == ""){
+        document.querySelector('#conteudoDiaSemanaQuartalinha2').style.backgroundColor = "#ffffff";
     }
     else {
-        document.querySelector('#conteudoDiaSemanaQuarta3AVSlinha2').style.backgroundColor = "#E5E8E7";
+        document.querySelector('#conteudoDiaSemanaQuartalinha2').style.backgroundColor = "#E5E8E7";
     }
 });
 
-$('#conteudoDiaSemanaQuinta3AVSlinha2 .hora').on('change',function(){
-    var horaInicioQuinta3AVSlinha2 = document.getElementById("horaInicioQuinta3AVSlinha2");
-    var horaFimQuinta3AVSlinha2 = document.getElementById("horaFimQuinta3AVSlinha2");
+$('#conteudoDiaSemanaQuintalinha2 .hora').on('change',function(){
+    var horaInicioQuintalinha2 = document.getElementById("horaInicioQuintalinha2");
+    var horaFimQuintalinha2 = document.getElementById("horaFimQuintalinha2");
     
-    if (horaInicioQuinta3AVSlinha2.value == "00:00" && horaFimQuinta3AVSlinha2.value == "00:00"){
-    document.querySelector('#conteudoDiaSemanaQuinta3AVSlinha2').style.backgroundColor = "#ffffff";
+    if (horaInicioQuintalinha2.value == "00:00" && horaFimQuintalinha2.value == "00:00"){
+    document.querySelector('#conteudoDiaSemanaQuintalinha2').style.backgroundColor = "#ffffff";
     }
-    else if (horaInicioQuinta3AVSlinha2.value == "" || horaFimQuinta3AVSlinha2.value == ""){
-        document.querySelector('#conteudoDiaSemanaQuinta3AVSlinha2').style.backgroundColor = "#ffffff";
+    else if (horaInicioQuintalinha2.value == "" || horaFimQuintalinha2.value == ""){
+        document.querySelector('#conteudoDiaSemanaQuintalinha2').style.backgroundColor = "#ffffff";
     }
     else {
-        document.querySelector('#conteudoDiaSemanaQuinta3AVSlinha2').style.backgroundColor = "#E5E8E7";
+        document.querySelector('#conteudoDiaSemanaQuintalinha2').style.backgroundColor = "#E5E8E7";
     }
 });
 
-$('#conteudoDiaSemanaSexta3AVSlinha2 .hora').on('change',function(){
-    var horaInicioSexta3AVSlinha2 = document.getElementById("horaInicioSexta3AVSlinha2");
-    var horaFimSexta3AVSlinha2 = document.getElementById("horaFimSexta3AVSlinha2");
+$('#conteudoDiaSemanaSextalinha2 .hora').on('change',function(){
+    var horaInicioSextalinha2 = document.getElementById("horaInicioSextalinha2");
+    var horaFimSextalinha2 = document.getElementById("horaFimSextalinha2");
     
-    if (horaInicioSexta3AVSlinha2.value == "00:00" && horaFimSexta3AVSlinha2.value == "00:00"){
-    document.querySelector('#conteudoDiaSemanaSexta3AVSlinha2').style.backgroundColor = "#ffffff";
+    if (horaInicioSextalinha2.value == "00:00" && horaFimSextalinha2.value == "00:00"){
+    document.querySelector('#conteudoDiaSemanaSextalinha2').style.backgroundColor = "#ffffff";
     }
-    else if (horaInicioSexta3AVSlinha2.value == "" || horaFimSexta3AVSlinha2.value == ""){
-        document.querySelector('#conteudoDiaSemanaSexta3AVSlinha2').style.backgroundColor = "#ffffff";
+    else if (horaInicioSextalinha2.value == "" || horaFimSextalinha2.value == ""){
+        document.querySelector('#conteudoDiaSemanaSextalinha2').style.backgroundColor = "#ffffff";
     }
     else {
-        document.querySelector('#conteudoDiaSemanaSexta3AVSlinha2').style.backgroundColor = "#E5E8E7";
+        document.querySelector('#conteudoDiaSemanaSextalinha2').style.backgroundColor = "#E5E8E7";
     }
 });
 
-$('#conteudoDiaSemanaSabado3AVSlinha2 .hora').on('change',function(){
-    var horaInicioSabado3AVSlinha2 = document.getElementById("horaInicioSabado3AVSlinha2");
-    var horaFimSabado3AVSlinha2 = document.getElementById("horaFimSabado3AVSlinha2");
+$('#conteudoDiaSemanaSabadolinha2 .hora').on('change',function(){
+    var horaInicioSabadolinha2 = document.getElementById("horaInicioSabadolinha2");
+    var horaFimSabadolinha2 = document.getElementById("horaFimSabadolinha2");
     
-    if (horaInicioSabado3AVSlinha2.value == "00:00" && horaFimSabado3AVSlinha2.value == "00:00"){
-    document.querySelector('#conteudoDiaSemanaSabado3AVSlinha2').style.backgroundColor = "#ffffff";
+    if (horaInicioSabadolinha2.value == "00:00" && horaFimSabadolinha2.value == "00:00"){
+    document.querySelector('#conteudoDiaSemanaSabadolinha2').style.backgroundColor = "#ffffff";
     }
-    else if (horaInicioSabado3AVSlinha2.value == "" || horaFimSabado3AVSlinha2.value == ""){
-        document.querySelector('#conteudoDiaSemanaSabado3AVSlinha2').style.backgroundColor = "#ffffff";
+    else if (horaInicioSabadolinha2.value == "" || horaFimSabadolinha2.value == ""){
+        document.querySelector('#conteudoDiaSemanaSabadolinha2').style.backgroundColor = "#ffffff";
     }
     else {
-        document.querySelector('#conteudoDiaSemanaSabado3AVSlinha2').style.backgroundColor = "#E5E8E7";
+        document.querySelector('#conteudoDiaSemanaSabadolinha2').style.backgroundColor = "#E5E8E7";
     }
 });
 
-$('#conteudoDiaSemanaDomingo3AVSlinha2 .hora').on('change',function(){
-    var horaInicioDomingo3AVSlinha2 = document.getElementById("horaInicioDomingo3AVSlinha2");
-    var horaFimDomingo3AVSlinha2 = document.getElementById("horaFimDomingo3AVSlinha2");
+$('#conteudoDiaSemanaDomingolinha2 .hora').on('change',function(){
+    var horaInicioDomingolinha2 = document.getElementById("horaInicioDomingolinha2");
+    var horaFimDomingolinha2 = document.getElementById("horaFimDomingolinha2");
     
-    if (horaInicioDomingo3AVSlinha2.value == "00:00" && horaFimDomingo3AVSlinha2.value == "00:00"){
-    document.querySelector('#conteudoDiaSemanaDomingo3AVSlinha2').style.backgroundColor = "#ffffff";
+    if (horaInicioDomingolinha2.value == "00:00" && horaFimDomingolinha2.value == "00:00"){
+    document.querySelector('#conteudoDiaSemanaDomingolinha2').style.backgroundColor = "#ffffff";
     }
-    else if (horaInicioDomingo3AVSlinha2.value == "" || horaFimDomingo3AVSlinha2.value == ""){
-        document.querySelector('#conteudoDiaSemanaDomingo3AVSlinha2').style.backgroundColor = "#ffffff";
+    else if (horaInicioDomingolinha2.value == "" || horaFimDomingolinha2.value == ""){
+        document.querySelector('#conteudoDiaSemanaDomingolinha2').style.backgroundColor = "#ffffff";
     }
     else {
-        document.querySelector('#conteudoDiaSemanaDomingo3AVSlinha2').style.backgroundColor = "#E5E8E7";
+        document.querySelector('#conteudoDiaSemanaDomingolinha2').style.backgroundColor = "#E5E8E7";
     }
 });
 
 
-$('#conteudoDiaSemanaSegunda3AVSlinha3 .hora').on('change',function(){
-    var horaInicioSegunda3AVSlinha3 = document.getElementById("horaInicioSegunda3AVSlinha3");
-    var horaFimSegunda3AVSlinha3 = document.getElementById("horaFimSegunda3AVSlinha3");
+$('#conteudoDiaSemanaSegundalinha3 .hora').on('change',function(){
+    var horaInicioSegundalinha3 = document.getElementById("horaInicioSegundalinha3");
+    var horaFimSegundalinha3 = document.getElementById("horaFimSegundalinha3");
     
-    if (horaInicioSegunda3AVSlinha3.value == "00:00" && horaFimSegunda3AVSlinha3.value == "00:00"){
-    document.querySelector('#conteudoDiaSemanaSegunda3AVSlinha3').style.backgroundColor = "#ffffff";
+    if (horaInicioSegundalinha3.value == "00:00" && horaFimSegundalinha3.value == "00:00"){
+    document.querySelector('#conteudoDiaSemanaSegundalinha3').style.backgroundColor = "#ffffff";
     }
-    else if (horaInicioSegunda3AVSlinha3.value == "" || horaFimSegunda3AVSlinha3.value == ""){
-        document.querySelector('#conteudoDiaSemanaSegunda3AVSlinha3').style.backgroundColor = "#ffffff";
+    else if (horaInicioSegundalinha3.value == "" || horaFimSegundalinha3.value == ""){
+        document.querySelector('#conteudoDiaSemanaSegundalinha3').style.backgroundColor = "#ffffff";
     }
     else {
-        document.querySelector('#conteudoDiaSemanaSegunda3AVSlinha3').style.backgroundColor = "#E5E8E7";
+        document.querySelector('#conteudoDiaSemanaSegundalinha3').style.backgroundColor = "#E5E8E7";
     }
 });
 
-$('#conteudoDiaSemanaTerca3AVSlinha3 .hora').on('change',function(){
-    var horaInicioTerca3AVSlinha3 = document.getElementById("horaInicioTerca3AVSlinha3");
-    var horaFimTerca3AVSlinha3 = document.getElementById("horaFimTerca3AVSlinha3");
+$('#conteudoDiaSemanaTercalinha3 .hora').on('change',function(){
+    var horaInicioTercalinha3 = document.getElementById("horaInicioTercalinha3");
+    var horaFimTercalinha3 = document.getElementById("horaFimTercalinha3");
     
-    if (horaInicioTerca3AVSlinha3.value == "00:00" && horaFimTerca3AVSlinha3.value == "00:00"){
-    document.querySelector('#conteudoDiaSemanaTerca3AVSlinha3').style.backgroundColor = "#ffffff";
+    if (horaInicioTercalinha3.value == "00:00" && horaFimTercalinha3.value == "00:00"){
+    document.querySelector('#conteudoDiaSemanaTercalinha3').style.backgroundColor = "#ffffff";
     }
-    else if (horaInicioTerca3AVSlinha3.value == "" || horaFimTerca3AVSlinha3.value == ""){
-        document.querySelector('#conteudoDiaSemanaTerca3AVSlinha3').style.backgroundColor = "#ffffff";
+    else if (horaInicioTercalinha3.value == "" || horaFimTercalinha3.value == ""){
+        document.querySelector('#conteudoDiaSemanaTercalinha3').style.backgroundColor = "#ffffff";
     }
     else {
-        document.querySelector('#conteudoDiaSemanaTerca3AVSlinha3').style.backgroundColor = "#E5E8E7";
+        document.querySelector('#conteudoDiaSemanaTercalinha3').style.backgroundColor = "#E5E8E7";
     }
 });
 
-$('#conteudoDiaSemanaQuarta3AVSlinha3 .hora').on('change',function(){
-    var horaInicioQuarta3AVSlinha3 = document.getElementById("horaInicioQuarta3AVSlinha3");
-    var horaFimQuarta3AVSlinha3 = document.getElementById("horaFimQuarta3AVSlinha3");
+$('#conteudoDiaSemanaQuartalinha3 .hora').on('change',function(){
+    var horaInicioQuartalinha3 = document.getElementById("horaInicioQuartalinha3");
+    var horaFimQuartalinha3 = document.getElementById("horaFimQuartalinha3");
     
-    if (horaInicioQuarta3AVSlinha3.value == "00:00" && horaFimQuarta3AVSlinha3.value == "00:00"){
-    document.querySelector('#conteudoDiaSemanaQuarta3AVSlinha3').style.backgroundColor = "#ffffff";
+    if (horaInicioQuartalinha3.value == "00:00" && horaFimQuartalinha3.value == "00:00"){
+    document.querySelector('#conteudoDiaSemanaQuartalinha3').style.backgroundColor = "#ffffff";
     }
-    else if (horaInicioQuarta3AVSlinha3.value == "" || horaFimQuarta3AVSlinha3.value == ""){
-        document.querySelector('#conteudoDiaSemanaQuarta3AVSlinha3').style.backgroundColor = "#ffffff";
+    else if (horaInicioQuartalinha3.value == "" || horaFimQuartalinha3.value == ""){
+        document.querySelector('#conteudoDiaSemanaQuartalinha3').style.backgroundColor = "#ffffff";
     }
     else {
-        document.querySelector('#conteudoDiaSemanaQuarta3AVSlinha3').style.backgroundColor = "#E5E8E7";
+        document.querySelector('#conteudoDiaSemanaQuartalinha3').style.backgroundColor = "#E5E8E7";
     }
 });
 
-$('#conteudoDiaSemanaQuinta3AVSlinha3 .hora').on('change',function(){
-    var horaInicioQuinta3AVSlinha3 = document.getElementById("horaInicioQuinta3AVSlinha3");
-    var horaFimQuinta3AVSlinha3 = document.getElementById("horaFimQuinta3AVSlinha3");
+$('#conteudoDiaSemanaQuintalinha3 .hora').on('change',function(){
+    var horaInicioQuintalinha3 = document.getElementById("horaInicioQuintalinha3");
+    var horaFimQuintalinha3 = document.getElementById("horaFimQuintalinha3");
     
-    if (horaInicioQuinta3AVSlinha3.value == "00:00" && horaFimQuinta3AVSlinha3.value == "00:00"){
-    document.querySelector('#conteudoDiaSemanaQuinta3AVSlinha3').style.backgroundColor = "#ffffff";
+    if (horaInicioQuintalinha3.value == "00:00" && horaFimQuintalinha3.value == "00:00"){
+    document.querySelector('#conteudoDiaSemanaQuintalinha3').style.backgroundColor = "#ffffff";
     }
-    else if (horaInicioQuinta3AVSlinha3.value == "" || horaFimQuinta3AVSlinha3.value == ""){
-        document.querySelector('#conteudoDiaSemanaQuinta3AVSlinha3').style.backgroundColor = "#ffffff";
+    else if (horaInicioQuintalinha3.value == "" || horaFimQuintalinha3.value == ""){
+        document.querySelector('#conteudoDiaSemanaQuintalinha3').style.backgroundColor = "#ffffff";
     }
     else {
-        document.querySelector('#conteudoDiaSemanaQuinta3AVSlinha3').style.backgroundColor = "#E5E8E7";
+        document.querySelector('#conteudoDiaSemanaQuintalinha3').style.backgroundColor = "#E5E8E7";
     }
 });
 
-$('#conteudoDiaSemanaSexta3AVSlinha3 .hora').on('change',function(){
-    var horaInicioSexta3AVSlinha3 = document.getElementById("horaInicioSexta3AVSlinha3");
-    var horaFimSexta3AVSlinha3 = document.getElementById("horaFimSexta3AVSlinha3");
+$('#conteudoDiaSemanaSextalinha3 .hora').on('change',function(){
+    var horaInicioSextalinha3 = document.getElementById("horaInicioSextalinha3");
+    var horaFimSextalinha3 = document.getElementById("horaFimSextalinha3");
     
-    if (horaInicioSexta3AVSlinha3.value == "00:00" && horaFimSexta3AVSlinha3.value == "00:00"){
-    document.querySelector('#conteudoDiaSemanaSexta3AVSlinha3').style.backgroundColor = "#ffffff";
+    if (horaInicioSextalinha3.value == "00:00" && horaFimSextalinha3.value == "00:00"){
+    document.querySelector('#conteudoDiaSemanaSextalinha3').style.backgroundColor = "#ffffff";
     }
-    else if (horaInicioSexta3AVSlinha3.value == "" || horaFimSexta3AVSlinha3.value == ""){
-        document.querySelector('#conteudoDiaSemanaSexta3AVSlinha3').style.backgroundColor = "#ffffff";
+    else if (horaInicioSextalinha3.value == "" || horaFimSextalinha3.value == ""){
+        document.querySelector('#conteudoDiaSemanaSextalinha3').style.backgroundColor = "#ffffff";
     }
     else {
-        document.querySelector('#conteudoDiaSemanaSexta3AVSlinha3').style.backgroundColor = "#E5E8E7";
+        document.querySelector('#conteudoDiaSemanaSextalinha3').style.backgroundColor = "#E5E8E7";
     }
 });
 
-$('#conteudoDiaSemanaSabado3AVSlinha3 .hora').on('change',function(){
-    var horaInicioSabado3AVSlinha3 = document.getElementById("horaInicioSabado3AVSlinha3");
-    var horaFimSabado3AVSlinha3 = document.getElementById("horaFimSabado3AVSlinha3");
+$('#conteudoDiaSemanaSabadolinha3 .hora').on('change',function(){
+    var horaInicioSabadolinha3 = document.getElementById("horaInicioSabadolinha3");
+    var horaFimSabadolinha3 = document.getElementById("horaFimSabadolinha3");
     
-    if (horaInicioSabado3AVSlinha3.value == "00:00" && horaFimSabado3AVSlinha3.value == "00:00"){
-    document.querySelector('#conteudoDiaSemanaSabado3AVSlinha3').style.backgroundColor = "#ffffff";
+    if (horaInicioSabadolinha3.value == "00:00" && horaFimSabadolinha3.value == "00:00"){
+    document.querySelector('#conteudoDiaSemanaSabadolinha3').style.backgroundColor = "#ffffff";
     }
-    else if (horaInicioSabado3AVSlinha3.value == "" || horaFimSabado3AVSlinha3.value == ""){
-        document.querySelector('#conteudoDiaSemanaSabado3AVSlinha3').style.backgroundColor = "#ffffff";
+    else if (horaInicioSabadolinha3.value == "" || horaFimSabadolinha3.value == ""){
+        document.querySelector('#conteudoDiaSemanaSabadolinha3').style.backgroundColor = "#ffffff";
     }
     else {
-        document.querySelector('#conteudoDiaSemanaSabado3AVSlinha3').style.backgroundColor = "#E5E8E7";
+        document.querySelector('#conteudoDiaSemanaSabadolinha3').style.backgroundColor = "#E5E8E7";
     }
 });
 
-$('#conteudoDiaSemanaDomingo3AVSlinha3 .hora').on('change',function(){
-    var horaInicioDomingo3AVSlinha3 = document.getElementById("horaInicioDomingo3AVSlinha3");
-    var horaFimDomingo3AVSlinha3 = document.getElementById("horaFimDomingo3AVSlinha3");
+$('#conteudoDiaSemanaDomingolinha3 .hora').on('change',function(){
+    var horaInicioDomingolinha3 = document.getElementById("horaInicioDomingolinha3");
+    var horaFimDomingolinha3 = document.getElementById("horaFimDomingolinha3");
     
-    if (horaInicioDomingo3AVSlinha3.value == "00:00" && horaFimDomingo3AVSlinha3.value == "00:00"){
-    document.querySelector('#conteudoDiaSemanaDomingo3AVSlinha3').style.backgroundColor = "#ffffff";
+    if (horaInicioDomingolinha3.value == "00:00" && horaFimDomingolinha3.value == "00:00"){
+    document.querySelector('#conteudoDiaSemanaDomingolinha3').style.backgroundColor = "#ffffff";
     }
-    else if (horaInicioDomingo3AVSlinha3.value == "" || horaFimDomingo3AVSlinha3.value == ""){
-        document.querySelector('#conteudoDiaSemanaDomingo3AVSlinha3').style.backgroundColor = "#ffffff";
+    else if (horaInicioDomingolinha3.value == "" || horaFimDomingolinha3.value == ""){
+        document.querySelector('#conteudoDiaSemanaDomingolinha3').style.backgroundColor = "#ffffff";
     }
     else {
-        document.querySelector('#conteudoDiaSemanaDomingo3AVSlinha3').style.backgroundColor = "#E5E8E7";
+        document.querySelector('#conteudoDiaSemanaDomingolinha3').style.backgroundColor = "#E5E8E7";
     }
 });
 
 
-$('#conteudoDiaSemanaSegunda3AVSlinha4 .hora').on('change',function(){
-    var horaInicioSegunda3AVSlinha4 = document.getElementById("horaInicioSegunda3AVSlinha4");
-    var horaFimSegunda3AVSlinha4 = document.getElementById("horaFimSegunda3AVSlinha4");
+$('#conteudoDiaSemanaSegundalinha4 .hora').on('change',function(){
+    var horaInicioSegundalinha4 = document.getElementById("horaInicioSegundalinha4");
+    var horaFimSegundalinha4 = document.getElementById("horaFimSegundalinha4");
     
-    if (horaInicioSegunda3AVSlinha4.value == "00:00" && horaFimSegunda3AVSlinha4.value == "00:00"){
-    document.querySelector('#conteudoDiaSemanaSegunda3AVSlinha4').style.backgroundColor = "#ffffff";
+    if (horaInicioSegundalinha4.value == "00:00" && horaFimSegundalinha4.value == "00:00"){
+    document.querySelector('#conteudoDiaSemanaSegundalinha4').style.backgroundColor = "#ffffff";
     }
-    else if (horaInicioSegunda3AVSlinha4.value == "" || horaFimSegunda3AVSlinha4.value == ""){
-        document.querySelector('#conteudoDiaSemanaSegunda3AVSlinha4').style.backgroundColor = "#ffffff";
+    else if (horaInicioSegundalinha4.value == "" || horaFimSegundalinha4.value == ""){
+        document.querySelector('#conteudoDiaSemanaSegundalinha4').style.backgroundColor = "#ffffff";
     }
     else {
-        document.querySelector('#conteudoDiaSemanaSegunda3AVSlinha4').style.backgroundColor = "#E5E8E7";
+        document.querySelector('#conteudoDiaSemanaSegundalinha4').style.backgroundColor = "#E5E8E7";
     }
 });
 
-$('#conteudoDiaSemanaTerca3AVSlinha4 .hora').on('change',function(){
-    var horaInicioTerca3AVSlinha4 = document.getElementById("horaInicioTerca3AVSlinha4");
-    var horaFimTerca3AVSlinha4 = document.getElementById("horaFimTerca3AVSlinha4");
+$('#conteudoDiaSemanaTercalinha4 .hora').on('change',function(){
+    var horaInicioTercalinha4 = document.getElementById("horaInicioTercalinha4");
+    var horaFimTercalinha4 = document.getElementById("horaFimTercalinha4");
     
-    if (horaInicioTerca3AVSlinha4.value == "00:00" && horaFimTerca3AVSlinha4.value == "00:00"){
-    document.querySelector('#conteudoDiaSemanaTerca3AVSlinha4').style.backgroundColor = "#ffffff";
+    if (horaInicioTercalinha4.value == "00:00" && horaFimTercalinha4.value == "00:00"){
+    document.querySelector('#conteudoDiaSemanaTercalinha4').style.backgroundColor = "#ffffff";
     }
-    else if (horaInicioTerca3AVSlinha4.value == "" || horaFimTerca3AVSlinha4.value == ""){
-        document.querySelector('#conteudoDiaSemanaTerca3AVSlinha4').style.backgroundColor = "#ffffff";
+    else if (horaInicioTercalinha4.value == "" || horaFimTercalinha4.value == ""){
+        document.querySelector('#conteudoDiaSemanaTercalinha4').style.backgroundColor = "#ffffff";
     }
     else {
-        document.querySelector('#conteudoDiaSemanaTerca3AVSlinha4').style.backgroundColor = "#E5E8E7";
+        document.querySelector('#conteudoDiaSemanaTercalinha4').style.backgroundColor = "#E5E8E7";
     }
 });
 
-$('#conteudoDiaSemanaQuarta3AVSlinha4 .hora').on('change',function(){
-    var horaInicioQuarta3AVSlinha4 = document.getElementById("horaInicioQuarta3AVSlinha4");
-    var horaFimQuarta3AVSlinha4 = document.getElementById("horaFimQuarta3AVSlinha4");
+$('#conteudoDiaSemanaQuartalinha4 .hora').on('change',function(){
+    var horaInicioQuartalinha4 = document.getElementById("horaInicioQuartalinha4");
+    var horaFimQuartalinha4 = document.getElementById("horaFimQuartalinha4");
     
-    if (horaInicioQuarta3AVSlinha4.value == "00:00" && horaFimQuarta3AVSlinha4.value == "00:00"){
-    document.querySelector('#conteudoDiaSemanaQuarta3AVSlinha4').style.backgroundColor = "#ffffff";
+    if (horaInicioQuartalinha4.value == "00:00" && horaFimQuartalinha4.value == "00:00"){
+    document.querySelector('#conteudoDiaSemanaQuartalinha4').style.backgroundColor = "#ffffff";
     }
-    else if (horaInicioQuarta3AVSlinha4.value == "" || horaFimQuarta3AVSlinha4.value == ""){
-        document.querySelector('#conteudoDiaSemanaQuarta3AVSlinha4').style.backgroundColor = "#ffffff";
+    else if (horaInicioQuartalinha4.value == "" || horaFimQuartalinha4.value == ""){
+        document.querySelector('#conteudoDiaSemanaQuartalinha4').style.backgroundColor = "#ffffff";
     }
     else {
-        document.querySelector('#conteudoDiaSemanaQuarta3AVSlinha4').style.backgroundColor = "#E5E8E7";
+        document.querySelector('#conteudoDiaSemanaQuartalinha4').style.backgroundColor = "#E5E8E7";
     }
 });
 
-$('#conteudoDiaSemanaQuinta3AVSlinha4 .hora').on('change',function(){
-    var horaInicioQuinta3AVSlinha4 = document.getElementById("horaInicioQuinta3AVSlinha4");
-    var horaFimQuinta3AVSlinha4 = document.getElementById("horaFimQuinta3AVSlinha4");
+$('#conteudoDiaSemanaQuintalinha4 .hora').on('change',function(){
+    var horaInicioQuintalinha4 = document.getElementById("horaInicioQuintalinha4");
+    var horaFimQuintalinha4 = document.getElementById("horaFimQuintalinha4");
     
-    if (horaInicioQuinta3AVSlinha4.value == "00:00" && horaFimQuinta3AVSlinha4.value == "00:00"){
-    document.querySelector('#conteudoDiaSemanaQuinta3AVSlinha4').style.backgroundColor = "#ffffff";
+    if (horaInicioQuintalinha4.value == "00:00" && horaFimQuintalinha4.value == "00:00"){
+    document.querySelector('#conteudoDiaSemanaQuintalinha4').style.backgroundColor = "#ffffff";
     }
-    else if (horaInicioQuinta3AVSlinha4.value == "" || horaFimQuinta3AVSlinha4.value == ""){
-        document.querySelector('#conteudoDiaSemanaQuinta3AVSlinha4').style.backgroundColor = "#ffffff";
+    else if (horaInicioQuintalinha4.value == "" || horaFimQuintalinha4.value == ""){
+        document.querySelector('#conteudoDiaSemanaQuintalinha4').style.backgroundColor = "#ffffff";
     }
     else {
-        document.querySelector('#conteudoDiaSemanaQuinta3AVSlinha4').style.backgroundColor = "#E5E8E7";
+        document.querySelector('#conteudoDiaSemanaQuintalinha4').style.backgroundColor = "#E5E8E7";
     }
 });
 
-$('#conteudoDiaSemanaSexta3AVSlinha4 .hora').on('change',function(){
-    var horaInicioSexta3AVSlinha4 = document.getElementById("horaInicioSexta3AVSlinha4");
-    var horaFimSexta3AVSlinha4 = document.getElementById("horaFimSexta3AVSlinha4");
+$('#conteudoDiaSemanaSextalinha4 .hora').on('change',function(){
+    var horaInicioSextalinha4 = document.getElementById("horaInicioSextalinha4");
+    var horaFimSextalinha4 = document.getElementById("horaFimSextalinha4");
     
-    if (horaInicioSexta3AVSlinha4.value == "00:00" && horaFimSexta3AVSlinha4.value == "00:00"){
-    document.querySelector('#conteudoDiaSemanaSexta3AVSlinha4').style.backgroundColor = "#ffffff";
+    if (horaInicioSextalinha4.value == "00:00" && horaFimSextalinha4.value == "00:00"){
+    document.querySelector('#conteudoDiaSemanaSextalinha4').style.backgroundColor = "#ffffff";
     }
-    else if (horaInicioSexta3AVSlinha4.value == "" || horaFimSexta3AVSlinha4.value == ""){
-        document.querySelector('#conteudoDiaSemanaSexta3AVSlinha4').style.backgroundColor = "#ffffff";
+    else if (horaInicioSextalinha4.value == "" || horaFimSextalinha4.value == ""){
+        document.querySelector('#conteudoDiaSemanaSextalinha4').style.backgroundColor = "#ffffff";
     }
     else {
-        document.querySelector('#conteudoDiaSemanaSexta3AVSlinha4').style.backgroundColor = "#E5E8E7";
+        document.querySelector('#conteudoDiaSemanaSextalinha4').style.backgroundColor = "#E5E8E7";
     }
 });
 
-$('#conteudoDiaSemanaSabado3AVSlinha4 .hora').on('change',function(){
-    var horaInicioSabado3AVSlinha4 = document.getElementById("horaInicioSabado3AVSlinha4");
-    var horaFimSabado3AVSlinha4 = document.getElementById("horaFimSabado3AVSlinha4");
+$('#conteudoDiaSemanaSabadolinha4 .hora').on('change',function(){
+    var horaInicioSabadolinha4 = document.getElementById("horaInicioSabadolinha4");
+    var horaFimSabadolinha4 = document.getElementById("horaFimSabadolinha4");
     
-    if (horaInicioSabado3AVSlinha4.value == "00:00" && horaFimSabado3AVSlinha4.value == "00:00"){
-    document.querySelector('#conteudoDiaSemanaSabado3AVSlinha4').style.backgroundColor = "#ffffff";
+    if (horaInicioSabadolinha4.value == "00:00" && horaFimSabadolinha4.value == "00:00"){
+    document.querySelector('#conteudoDiaSemanaSabadolinha4').style.backgroundColor = "#ffffff";
     }
-    else if (horaInicioSabado3AVSlinha4.value == "" || horaFimSabado3AVSlinha4.value == ""){
-        document.querySelector('#conteudoDiaSemanaSabado3AVSlinha4').style.backgroundColor = "#ffffff";
+    else if (horaInicioSabadolinha4.value == "" || horaFimSabadolinha4.value == ""){
+        document.querySelector('#conteudoDiaSemanaSabadolinha4').style.backgroundColor = "#ffffff";
     }
     else {
-        document.querySelector('#conteudoDiaSemanaSabado3AVSlinha4').style.backgroundColor = "#E5E8E7";
+        document.querySelector('#conteudoDiaSemanaSabadolinha4').style.backgroundColor = "#E5E8E7";
     }
 });
 
-$('#conteudoDiaSemanaDomingo3AVSlinha4 .hora').on('change',function(){
-    var horaInicioDomingo3AVSlinha4 = document.getElementById("horaInicioDomingo3AVSlinha4");
-    var horaFimDomingo3AVSlinha4 = document.getElementById("horaFimDomingo3AVSlinha4");
+$('#conteudoDiaSemanaDomingolinha4 .hora').on('change',function(){
+    var horaInicioDomingolinha4 = document.getElementById("horaInicioDomingolinha4");
+    var horaFimDomingolinha4 = document.getElementById("horaFimDomingolinha4");
     
-    if (horaInicioDomingo3AVSlinha4.value == "00:00" && horaFimDomingo3AVSlinha4.value == "00:00"){
-    document.querySelector('#conteudoDiaSemanaDomingo3AVSlinha4').style.backgroundColor = "#ffffff";
+    if (horaInicioDomingolinha4.value == "00:00" && horaFimDomingolinha4.value == "00:00"){
+    document.querySelector('#conteudoDiaSemanaDomingolinha4').style.backgroundColor = "#ffffff";
     }
-    else if (horaInicioDomingo3AVSlinha4.value == "" || horaFimDomingo3AVSlinha4.value == ""){
-        document.querySelector('#conteudoDiaSemanaDomingo3AVSlinha4').style.backgroundColor = "#ffffff";
+    else if (horaInicioDomingolinha4.value == "" || horaFimDomingolinha4.value == ""){
+        document.querySelector('#conteudoDiaSemanaDomingolinha4').style.backgroundColor = "#ffffff";
     }
     else {
-        document.querySelector('#conteudoDiaSemanaDomingo3AVSlinha4').style.backgroundColor = "#E5E8E7";
+        document.querySelector('#conteudoDiaSemanaDomingolinha4').style.backgroundColor = "#E5E8E7";
     }
 });
 
 
-$('#conteudoDiaSemanaSegunda3AVSlinha5 .hora').on('change',function(){
-    var horaInicioSegunda3AVSlinha5 = document.getElementById("horaInicioSegunda3AVSlinha5");
-    var horaFimSegunda3AVSlinha5 = document.getElementById("horaFimSegunda3AVSlinha5");
+$('#conteudoDiaSemanaSegundalinha5 .hora').on('change',function(){
+    var horaInicioSegundalinha5 = document.getElementById("horaInicioSegundalinha5");
+    var horaFimSegundalinha5 = document.getElementById("horaFimSegundalinha5");
     
-    if (horaInicioSegunda3AVSlinha5.value == "00:00" && horaFimSegunda3AVSlinha5.value == "00:00"){
-    document.querySelector('#conteudoDiaSemanaSegunda3AVSlinha5').style.backgroundColor = "#ffffff";
+    if (horaInicioSegundalinha5.value == "00:00" && horaFimSegundalinha5.value == "00:00"){
+    document.querySelector('#conteudoDiaSemanaSegundalinha5').style.backgroundColor = "#ffffff";
     }
-    else if (horaInicioSegunda3AVSlinha5.value == "" || horaFimSegunda3AVSlinha5.value == ""){
-        document.querySelector('#conteudoDiaSemanaSegunda3AVSlinha5').style.backgroundColor = "#ffffff";
+    else if (horaInicioSegundalinha5.value == "" || horaFimSegundalinha5.value == ""){
+        document.querySelector('#conteudoDiaSemanaSegundalinha5').style.backgroundColor = "#ffffff";
     }
     else {
-        document.querySelector('#conteudoDiaSemanaSegunda3AVSlinha5').style.backgroundColor = "#E5E8E7";
+        document.querySelector('#conteudoDiaSemanaSegundalinha5').style.backgroundColor = "#E5E8E7";
     }
 });
 
-$('#conteudoDiaSemanaTerca3AVSlinha5 .hora').on('change',function(){
-    var horaInicioTerca3AVSlinha5 = document.getElementById("horaInicioTerca3AVSlinha5");
-    var horaFimTerca3AVSlinha5 = document.getElementById("horaFimTerca3AVSlinha5");
+$('#conteudoDiaSemanaTercalinha5 .hora').on('change',function(){
+    var horaInicioTercalinha5 = document.getElementById("horaInicioTercalinha5");
+    var horaFimTercalinha5 = document.getElementById("horaFimTercalinha5");
     
-    if (horaInicioTerca3AVSlinha5.value == "00:00" && horaFimTerca3AVSlinha5.value == "00:00"){
-    document.querySelector('#conteudoDiaSemanaTerca3AVSlinha5').style.backgroundColor = "#ffffff";
+    if (horaInicioTercalinha5.value == "00:00" && horaFimTercalinha5.value == "00:00"){
+    document.querySelector('#conteudoDiaSemanaTercalinha5').style.backgroundColor = "#ffffff";
     }
-    else if (horaInicioTerca3AVSlinha5.value == "" || horaFimTerca3AVSlinha5.value == ""){
-        document.querySelector('#conteudoDiaSemanaTerca3AVSlinha5').style.backgroundColor = "#ffffff";
+    else if (horaInicioTercalinha5.value == "" || horaFimTercalinha5.value == ""){
+        document.querySelector('#conteudoDiaSemanaTercalinha5').style.backgroundColor = "#ffffff";
     }
     else {
-        document.querySelector('#conteudoDiaSemanaTerca3AVSlinha5').style.backgroundColor = "#E5E8E7";
+        document.querySelector('#conteudoDiaSemanaTercalinha5').style.backgroundColor = "#E5E8E7";
     }
 });
 
-$('#conteudoDiaSemanaQuarta3AVSlinha5 .hora').on('change',function(){
-    var horaInicioQuarta3AVSlinha5 = document.getElementById("horaInicioQuarta3AVSlinha5");
-    var horaFimQuarta3AVSlinha5 = document.getElementById("horaFimQuarta3AVSlinha5");
+$('#conteudoDiaSemanaQuartalinha5 .hora').on('change',function(){
+    var horaInicioQuartalinha5 = document.getElementById("horaInicioQuartalinha5");
+    var horaFimQuartalinha5 = document.getElementById("horaFimQuartalinha5");
     
-    if (horaInicioQuarta3AVSlinha5.value == "00:00" && horaFimQuarta3AVSlinha5.value == "00:00"){
-    document.querySelector('#conteudoDiaSemanaQuarta3AVSlinha5').style.backgroundColor = "#ffffff";
+    if (horaInicioQuartalinha5.value == "00:00" && horaFimQuartalinha5.value == "00:00"){
+    document.querySelector('#conteudoDiaSemanaQuartalinha5').style.backgroundColor = "#ffffff";
     }
-    else if (horaInicioQuarta3AVSlinha5.value == "" || horaFimQuarta3AVSlinha5.value == ""){
-        document.querySelector('#conteudoDiaSemanaQuarta3AVSlinha5').style.backgroundColor = "#ffffff";
+    else if (horaInicioQuartalinha5.value == "" || horaFimQuartalinha5.value == ""){
+        document.querySelector('#conteudoDiaSemanaQuartalinha5').style.backgroundColor = "#ffffff";
     }
     else {
-        document.querySelector('#conteudoDiaSemanaQuarta3AVSlinha5').style.backgroundColor = "#E5E8E7";
+        document.querySelector('#conteudoDiaSemanaQuartalinha5').style.backgroundColor = "#E5E8E7";
     }
 });
 
-$('#conteudoDiaSemanaQuinta3AVSlinha5 .hora').on('change',function(){
-    var horaInicioQuinta3AVSlinha5 = document.getElementById("horaInicioQuinta3AVSlinha5");
-    var horaFimQuinta3AVSlinha5 = document.getElementById("horaFimQuinta3AVSlinha5");
+$('#conteudoDiaSemanaQuintalinha5 .hora').on('change',function(){
+    var horaInicioQuintalinha5 = document.getElementById("horaInicioQuintalinha5");
+    var horaFimQuintalinha5 = document.getElementById("horaFimQuintalinha5");
     
-    if (horaInicioQuinta3AVSlinha5.value == "00:00" && horaFimQuinta3AVSlinha5.value == "00:00"){
-    document.querySelector('#conteudoDiaSemanaQuinta3AVSlinha5').style.backgroundColor = "#ffffff";
+    if (horaInicioQuintalinha5.value == "00:00" && horaFimQuintalinha5.value == "00:00"){
+    document.querySelector('#conteudoDiaSemanaQuintalinha5').style.backgroundColor = "#ffffff";
     }
-    else if (horaInicioQuinta3AVSlinha5.value == "" || horaFimQuinta3AVSlinha5.value == ""){
-        document.querySelector('#conteudoDiaSemanaQuinta3AVSlinha5').style.backgroundColor = "#ffffff";
+    else if (horaInicioQuintalinha5.value == "" || horaFimQuintalinha5.value == ""){
+        document.querySelector('#conteudoDiaSemanaQuintalinha5').style.backgroundColor = "#ffffff";
     }
     else {
-        document.querySelector('#conteudoDiaSemanaQuinta3AVSlinha5').style.backgroundColor = "#E5E8E7";
+        document.querySelector('#conteudoDiaSemanaQuintalinha5').style.backgroundColor = "#E5E8E7";
     }
 });
 
-$('#conteudoDiaSemanaSexta3AVSlinha5 .hora').on('change',function(){
-    var horaInicioSexta3AVSlinha5 = document.getElementById("horaInicioSexta3AVSlinha5");
-    var horaFimSexta3AVSlinha5 = document.getElementById("horaFimSexta3AVSlinha5");
+$('#conteudoDiaSemanaSextalinha5 .hora').on('change',function(){
+    var horaInicioSextalinha5 = document.getElementById("horaInicioSextalinha5");
+    var horaFimSextalinha5 = document.getElementById("horaFimSextalinha5");
     
-    if (horaInicioSexta3AVSlinha5.value == "00:00" && horaFimSexta3AVSlinha5.value == "00:00"){
-    document.querySelector('#conteudoDiaSemanaSexta3AVSlinha5').style.backgroundColor = "#ffffff";
+    if (horaInicioSextalinha5.value == "00:00" && horaFimSextalinha5.value == "00:00"){
+    document.querySelector('#conteudoDiaSemanaSextalinha5').style.backgroundColor = "#ffffff";
     }
-    else if (horaInicioSexta3AVSlinha5.value == "" || horaFimSexta3AVSlinha5.value == ""){
-        document.querySelector('#conteudoDiaSemanaSexta3AVSlinha5').style.backgroundColor = "#ffffff";
+    else if (horaInicioSextalinha5.value == "" || horaFimSextalinha5.value == ""){
+        document.querySelector('#conteudoDiaSemanaSextalinha5').style.backgroundColor = "#ffffff";
     }
     else {
-        document.querySelector('#conteudoDiaSemanaSexta3AVSlinha5').style.backgroundColor = "#E5E8E7";
+        document.querySelector('#conteudoDiaSemanaSextalinha5').style.backgroundColor = "#E5E8E7";
     }
 });
 
-$('#conteudoDiaSemanaSabado3AVSlinha5 .hora').on('change',function(){
-    var horaInicioSabado3AVSlinha5 = document.getElementById("horaInicioSabado3AVSlinha5");
-    var horaFimSabado3AVSlinha5 = document.getElementById("horaFimSabado3AVSlinha5");
+$('#conteudoDiaSemanaSabadolinha5 .hora').on('change',function(){
+    var horaInicioSabadolinha5 = document.getElementById("horaInicioSabadolinha5");
+    var horaFimSabadolinha5 = document.getElementById("horaFimSabadolinha5");
     
-    if (horaInicioSabado3AVSlinha5.value == "00:00" && horaFimSabado3AVSlinha5.value == "00:00"){
-    document.querySelector('#conteudoDiaSemanaSabado3AVSlinha5').style.backgroundColor = "#ffffff";
+    if (horaInicioSabadolinha5.value == "00:00" && horaFimSabadolinha5.value == "00:00"){
+    document.querySelector('#conteudoDiaSemanaSabadolinha5').style.backgroundColor = "#ffffff";
     }
-    else if (horaInicioSabado3AVSlinha5.value == "" || horaFimSabado3AVSlinha5.value == ""){
-        document.querySelector('#conteudoDiaSemanaSabado3AVSlinha5').style.backgroundColor = "#ffffff";
+    else if (horaInicioSabadolinha5.value == "" || horaFimSabadolinha5.value == ""){
+        document.querySelector('#conteudoDiaSemanaSabadolinha5').style.backgroundColor = "#ffffff";
     }
     else {
-        document.querySelector('#conteudoDiaSemanaSabado3AVSlinha5').style.backgroundColor = "#E5E8E7";
+        document.querySelector('#conteudoDiaSemanaSabadolinha5').style.backgroundColor = "#E5E8E7";
     }
 });
 
-$('#conteudoDiaSemanaDomingo3AVSlinha5 .hora').on('change',function(){
-    var horaInicioDomingo3AVSlinha5 = document.getElementById("horaInicioDomingo3AVSlinha5");
-    var horaFimDomingo3AVSlinha5 = document.getElementById("horaFimDomingo3AVSlinha5");
+$('#conteudoDiaSemanaDomingolinha5 .hora').on('change',function(){
+    var horaInicioDomingolinha5 = document.getElementById("horaInicioDomingolinha5");
+    var horaFimDomingolinha5 = document.getElementById("horaFimDomingolinha5");
     
-    if (horaInicioDomingo3AVSlinha5.value == "00:00" && horaFimDomingo3AVSlinha5.value == "00:00"){
-    document.querySelector('#conteudoDiaSemanaDomingo3AVSlinha5').style.backgroundColor = "#ffffff";
+    if (horaInicioDomingolinha5.value == "00:00" && horaFimDomingolinha5.value == "00:00"){
+    document.querySelector('#conteudoDiaSemanaDomingolinha5').style.backgroundColor = "#ffffff";
     }
-    else if (horaInicioDomingo3AVSlinha5.value == "" || horaFimDomingo3AVSlinha5.value == ""){
-        document.querySelector('#conteudoDiaSemanaDomingo3AVSlinha5').style.backgroundColor = "#ffffff";
+    else if (horaInicioDomingolinha5.value == "" || horaFimDomingolinha5.value == ""){
+        document.querySelector('#conteudoDiaSemanaDomingolinha5').style.backgroundColor = "#ffffff";
     }
     else {
-        document.querySelector('#conteudoDiaSemanaDomingo3AVSlinha5').style.backgroundColor = "#E5E8E7";
+        document.querySelector('#conteudoDiaSemanaDomingolinha5').style.backgroundColor = "#E5E8E7";
     }
 });
 
-$('#conteudoDiaSemanaSegundaNUlinha1 .hora').on('change',function(){
-    var horaInicioSegundaNUlinha1 = document.getElementById("horaInicioSegundaNUlinha1");
-    var horaFimSegundaNUlinha1 = document.getElementById("horaFimSegundaNUlinha1");
-    
-    if (horaInicioSegundaNUlinha1.value == "00:00" && horaFimSegundaNUlinha1.value == "00:00"){
-    document.querySelector('#conteudoDiaSemanaSegundaNUlinha1').style.backgroundColor = "#ffffff";
-    }
-    else if (horaInicioSegundaNUlinha1.value == "" || horaFimSegundaNUlinha1.value == ""){
-        document.querySelector('#conteudoDiaSemanaSegundaNUlinha1').style.backgroundColor = "#ffffff";
-    }
-    else {
-        document.querySelector('#conteudoDiaSemanaSegundaNUlinha1').style.backgroundColor = "#E5E8E7";
-    }
-});
-
-$('#conteudoDiaSemanaTercaNUlinha1 .hora').on('change',function(){
-    var horaInicioTercaNUlinha1 = document.getElementById("horaInicioTercaNUlinha1");
-    var horaFimTercaNUlinha1 = document.getElementById("horaFimTercaNUlinha1");
-    
-    if (horaInicioTercaNUlinha1.value == "00:00" && horaFimTercaNUlinha1.value == "00:00"){
-    document.querySelector('#conteudoDiaSemanaTercaNUlinha1').style.backgroundColor = "#ffffff";
-    }
-    else if (horaInicioTercaNUlinha1.value == "" || horaFimTercaNUlinha1.value == ""){
-        document.querySelector('#conteudoDiaSemanaTercaNUlinha1').style.backgroundColor = "#ffffff";
-    }
-    else {
-        document.querySelector('#conteudoDiaSemanaTercaNUlinha1').style.backgroundColor = "#E5E8E7";
-    }
-});
-
-$('#conteudoDiaSemanaQuartaNUlinha1 .hora').on('change',function(){
-    var horaInicioQuartaNUlinha1 = document.getElementById("horaInicioQuartaNUlinha1");
-    var horaFimQuartaNUlinha1 = document.getElementById("horaFimQuartaNUlinha1");
-    
-    if (horaInicioQuartaNUlinha1.value == "00:00" && horaFimQuartaNUlinha1.value == "00:00"){
-    document.querySelector('#conteudoDiaSemanaQuartaNUlinha1').style.backgroundColor = "#ffffff";
-    }
-    else if (horaInicioQuartaNUlinha1.value == "" || horaFimQuartaNUlinha1.value == ""){
-        document.querySelector('#conteudoDiaSemanaQuartaNUlinha1').style.backgroundColor = "#ffffff";
-    }
-    else {
-        document.querySelector('#conteudoDiaSemanaQuartaNUlinha1').style.backgroundColor = "#E5E8E7";
-    }
-});
-
-$('#conteudoDiaSemanaQuintaNUlinha1 .hora').on('change',function(){
-    var horaInicioQuintaNUlinha1 = document.getElementById("horaInicioQuintaNUlinha1");
-    var horaFimQuintaNUlinha1 = document.getElementById("horaFimQuintaNUlinha1");
-    
-    if (horaInicioQuintaNUlinha1.value == "00:00" && horaFimQuintaNUlinha1.value == "00:00"){
-    document.querySelector('#conteudoDiaSemanaQuintaNUlinha1').style.backgroundColor = "#ffffff";
-    }
-    else if (horaInicioQuintaNUlinha1.value == "" || horaFimQuintaNUlinha1.value == ""){
-        document.querySelector('#conteudoDiaSemanaQuintaNUlinha1').style.backgroundColor = "#ffffff";
-    }
-    else {
-        document.querySelector('#conteudoDiaSemanaQuintaNUlinha1').style.backgroundColor = "#E5E8E7";
-    }
-});
-
-$('#conteudoDiaSemanaSextaNUlinha1 .hora').on('change',function(){
-    var horaInicioSextaNUlinha1 = document.getElementById("horaInicioSextaNUlinha1");
-    var horaFimSextaNUlinha1 = document.getElementById("horaFimSextaNUlinha1");
-    
-    if (horaInicioSextaNUlinha1.value == "00:00" && horaFimSextaNUlinha1.value == "00:00"){
-    document.querySelector('#conteudoDiaSemanaSextaNUlinha1').style.backgroundColor = "#ffffff";
-    }
-    else if (horaInicioSextaNUlinha1.value == "" || horaFimSextaNUlinha1.value == ""){
-        document.querySelector('#conteudoDiaSemanaSextaNUlinha1').style.backgroundColor = "#ffffff";
-    }
-    else {
-        document.querySelector('#conteudoDiaSemanaSextaNUlinha1').style.backgroundColor = "#E5E8E7";
-    }
-});
-
-$('#conteudoDiaSemanaSabadoNUlinha1 .hora').on('change',function(){
-    var horaInicioSabadoNUlinha1 = document.getElementById("horaInicioSabadoNUlinha1");
-    var horaFimSabadoNUlinha1 = document.getElementById("horaFimSabadoNUlinha1");
-    
-    if (horaInicioSabadoNUlinha1.value == "00:00" && horaFimSabadoNUlinha1.value == "00:00"){
-    document.querySelector('#conteudoDiaSemanaSabadoNUlinha1').style.backgroundColor = "#ffffff";
-    }
-    else if (horaInicioSabadoNUlinha1.value == "" || horaFimSabadoNUlinha1.value == ""){
-        document.querySelector('#conteudoDiaSemanaSabadoNUlinha1').style.backgroundColor = "#ffffff";
-    }
-    else {
-        document.querySelector('#conteudoDiaSemanaSabadoNUlinha1').style.backgroundColor = "#E5E8E7";
-    }
-});
-
-$('#conteudoDiaSemanaDomingoNUlinha1 .hora').on('change',function(){
-    var horaInicioDomingoNUlinha1 = document.getElementById("horaInicioDomingoNUlinha1");
-    var horaFimDomingoNUlinha1 = document.getElementById("horaFimDomingoNUlinha1");
-    
-    if (horaInicioDomingoNUlinha1.value == "00:00" && horaFimDomingoNUlinha1.value == "00:00"){
-    document.querySelector('#conteudoDiaSemanaDomingoNUlinha1').style.backgroundColor = "#ffffff";
-    }
-    else if (horaInicioDomingoNUlinha1.value == "" || horaFimDomingoNUlinha1.value == ""){
-        document.querySelector('#conteudoDiaSemanaDomingoNUlinha1').style.backgroundColor = "#ffffff";
-    }
-    else {
-        document.querySelector('#conteudoDiaSemanaDomingoNUlinha1').style.backgroundColor = "#E5E8E7";
-    }
-});
-
-
-$('#conteudoDiaSemanaSegundaNUlinha2 .hora').on('change',function(){
-    var horaInicioSegundaNUlinha2 = document.getElementById("horaInicioSegundaNUlinha2");
-    var horaFimSegundaNUlinha2 = document.getElementById("horaFimSegundaNUlinha2");
-    
-    if (horaInicioSegundaNUlinha2.value == "00:00" && horaFimSegundaNUlinha2.value == "00:00"){
-    document.querySelector('#conteudoDiaSemanaSegundaNUlinha2').style.backgroundColor = "#ffffff";
-    }
-    else if (horaInicioSegundaNUlinha2.value == "" || horaFimSegundaNUlinha2.value == ""){
-        document.querySelector('#conteudoDiaSemanaSegundaNUlinha2').style.backgroundColor = "#ffffff";
-    }
-    else {
-        document.querySelector('#conteudoDiaSemanaSegundaNUlinha2').style.backgroundColor = "#E5E8E7";
-    }
-});
-
-$('#conteudoDiaSemanaTercaNUlinha2 .hora').on('change',function(){
-    var horaInicioTercaNUlinha2 = document.getElementById("horaInicioTercaNUlinha2");
-    var horaFimTercaNUlinha2 = document.getElementById("horaFimTercaNUlinha2");
-    
-    if (horaInicioTercaNUlinha2.value == "00:00" && horaFimTercaNUlinha2.value == "00:00"){
-    document.querySelector('#conteudoDiaSemanaTercaNUlinha2').style.backgroundColor = "#ffffff";
-    }
-    else if (horaInicioTercaNUlinha2.value == "" || horaFimTercaNUlinha2.value == ""){
-        document.querySelector('#conteudoDiaSemanaTercaNUlinha2').style.backgroundColor = "#ffffff";
-    }
-    else {
-        document.querySelector('#conteudoDiaSemanaTercaNUlinha2').style.backgroundColor = "#E5E8E7";
-    }
-});
-
-$('#conteudoDiaSemanaQuartaNUlinha2 .hora').on('change',function(){
-    var horaInicioQuartaNUlinha2 = document.getElementById("horaInicioQuartaNUlinha2");
-    var horaFimQuartaNUlinha2 = document.getElementById("horaFimQuartaNUlinha2");
-    
-    if (horaInicioQuartaNUlinha2.value == "00:00" && horaFimQuartaNUlinha2.value == "00:00"){
-    document.querySelector('#conteudoDiaSemanaQuartaNUlinha2').style.backgroundColor = "#ffffff";
-    }
-    else if (horaInicioQuartaNUlinha2.value == "" || horaFimQuartaNUlinha2.value == ""){
-        document.querySelector('#conteudoDiaSemanaQuartaNUlinha2').style.backgroundColor = "#ffffff";
-    }
-    else {
-        document.querySelector('#conteudoDiaSemanaQuartaNUlinha2').style.backgroundColor = "#E5E8E7";
-    }
-});
-
-$('#conteudoDiaSemanaQuintaNUlinha2 .hora').on('change',function(){
-    var horaInicioQuintaNUlinha2 = document.getElementById("horaInicioQuintaNUlinha2");
-    var horaFimQuintaNUlinha2 = document.getElementById("horaFimQuintaNUlinha2");
-    
-    if (horaInicioQuintaNUlinha2.value == "00:00" && horaFimQuintaNUlinha2.value == "00:00"){
-    document.querySelector('#conteudoDiaSemanaQuintaNUlinha2').style.backgroundColor = "#ffffff";
-    }
-    else if (horaInicioQuintaNUlinha2.value == "" || horaFimQuintaNUlinha2.value == ""){
-        document.querySelector('#conteudoDiaSemanaQuintaNUlinha2').style.backgroundColor = "#ffffff";
-    }
-    else {
-        document.querySelector('#conteudoDiaSemanaQuintaNUlinha2').style.backgroundColor = "#E5E8E7";
-    }
-});
-
-$('#conteudoDiaSemanaSextaNUlinha2 .hora').on('change',function(){
-    var horaInicioSextaNUlinha2 = document.getElementById("horaInicioSextaNUlinha2");
-    var horaFimSextaNUlinha2 = document.getElementById("horaFimSextaNUlinha2");
-    
-    if (horaInicioSextaNUlinha2.value == "00:00" && horaFimSextaNUlinha2.value == "00:00"){
-    document.querySelector('#conteudoDiaSemanaSextaNUlinha2').style.backgroundColor = "#ffffff";
-    }
-    else if (horaInicioSextaNUlinha2.value == "" || horaFimSextaNUlinha2.value == ""){
-        document.querySelector('#conteudoDiaSemanaSextaNUlinha2').style.backgroundColor = "#ffffff";
-    }
-    else {
-        document.querySelector('#conteudoDiaSemanaSextaNUlinha2').style.backgroundColor = "#E5E8E7";
-    }
-});
-
-$('#conteudoDiaSemanaSabadoNUlinha2 .hora').on('change',function(){
-    var horaInicioSabadoNUlinha2 = document.getElementById("horaInicioSabadoNUlinha2");
-    var horaFimSabadoNUlinha2 = document.getElementById("horaFimSabadoNUlinha2");
-    
-    if (horaInicioSabadoNUlinha2.value == "00:00" && horaFimSabadoNUlinha2.value == "00:00"){
-    document.querySelector('#conteudoDiaSemanaSabadoNUlinha2').style.backgroundColor = "#ffffff";
-    }
-    else if (horaInicioSabadoNUlinha2.value == "" || horaFimSabadoNUlinha2.value == ""){
-        document.querySelector('#conteudoDiaSemanaSabadoNUlinha2').style.backgroundColor = "#ffffff";
-    }
-    else {
-        document.querySelector('#conteudoDiaSemanaSabadoNUlinha2').style.backgroundColor = "#E5E8E7";
-    }
-});
-
-$('#conteudoDiaSemanaDomingoNUlinha2 .hora').on('change',function(){
-    var horaInicioDomingoNUlinha2 = document.getElementById("horaInicioDomingoNUlinha2");
-    var horaFimDomingoNUlinha2 = document.getElementById("horaFimDomingoNUlinha2");
-    
-    if (horaInicioDomingoNUlinha2.value == "00:00" && horaFimDomingoNUlinha2.value == "00:00"){
-    document.querySelector('#conteudoDiaSemanaDomingoNUlinha2').style.backgroundColor = "#ffffff";
-    }
-    else if (horaInicioDomingoNUlinha2.value == "" || horaFimDomingoNUlinha2.value == ""){
-        document.querySelector('#conteudoDiaSemanaDomingoNUlinha2').style.backgroundColor = "#ffffff";
-    }
-    else {
-        document.querySelector('#conteudoDiaSemanaDomingoNUlinha2').style.backgroundColor = "#E5E8E7";
-    }
-});
-
-
-$('#conteudoDiaSemanaSegundaNUlinha3 .hora').on('change',function(){
-    var horaInicioSegundaNUlinha3 = document.getElementById("horaInicioSegundaNUlinha3");
-    var horaFimSegundaNUlinha3 = document.getElementById("horaFimSegundaNUlinha3");
-    
-    if (horaInicioSegundaNUlinha3.value == "00:00" && horaFimSegundaNUlinha3.value == "00:00"){
-    document.querySelector('#conteudoDiaSemanaSegundaNUlinha3').style.backgroundColor = "#ffffff";
-    }
-    else if (horaInicioSegundaNUlinha3.value == "" || horaFimSegundaNUlinha3.value == ""){
-        document.querySelector('#conteudoDiaSemanaSegundaNUlinha3').style.backgroundColor = "#ffffff";
-    }
-    else {
-        document.querySelector('#conteudoDiaSemanaSegundaNUlinha3').style.backgroundColor = "#E5E8E7";
-    }
-});
-
-$('#conteudoDiaSemanaTercaNUlinha3 .hora').on('change',function(){
-    var horaInicioTercaNUlinha3 = document.getElementById("horaInicioTercaNUlinha3");
-    var horaFimTercaNUlinha3 = document.getElementById("horaFimTercaNUlinha3");
-    
-    if (horaInicioTercaNUlinha3.value == "00:00" && horaFimTercaNUlinha3.value == "00:00"){
-    document.querySelector('#conteudoDiaSemanaTercaNUlinha3').style.backgroundColor = "#ffffff";
-    }
-    else if (horaInicioTercaNUlinha3.value == "" || horaFimTercaNUlinha3.value == ""){
-        document.querySelector('#conteudoDiaSemanaTercaNUlinha3').style.backgroundColor = "#ffffff";
-    }
-    else {
-        document.querySelector('#conteudoDiaSemanaTercaNUlinha3').style.backgroundColor = "#E5E8E7";
-    }
-});
-
-$('#conteudoDiaSemanaQuartaNUlinha3 .hora').on('change',function(){
-    var horaInicioQuartaNUlinha3 = document.getElementById("horaInicioQuartaNUlinha3");
-    var horaFimQuartaNUlinha3 = document.getElementById("horaFimQuartaNUlinha3");
-    
-    if (horaInicioQuartaNUlinha3.value == "00:00" && horaFimQuartaNUlinha3.value == "00:00"){
-    document.querySelector('#conteudoDiaSemanaQuartaNUlinha3').style.backgroundColor = "#ffffff";
-    }
-    else if (horaInicioQuartaNUlinha3.value == "" || horaFimQuartaNUlinha3.value == ""){
-        document.querySelector('#conteudoDiaSemanaQuartaNUlinha3').style.backgroundColor = "#ffffff";
-    }
-    else {
-        document.querySelector('#conteudoDiaSemanaQuartaNUlinha3').style.backgroundColor = "#E5E8E7";
-    }
-});
-
-$('#conteudoDiaSemanaQuintaNUlinha3 .hora').on('change',function(){
-    var horaInicioQuintaNUlinha3 = document.getElementById("horaInicioQuintaNUlinha3");
-    var horaFimQuintaNUlinha3 = document.getElementById("horaFimQuintaNUlinha3");
-    
-    if (horaInicioQuintaNUlinha3.value == "00:00" && horaFimQuintaNUlinha3.value == "00:00"){
-    document.querySelector('#conteudoDiaSemanaQuintaNUlinha3').style.backgroundColor = "#ffffff";
-    }
-    else if (horaInicioQuintaNUlinha3.value == "" || horaFimQuintaNUlinha3.value == ""){
-        document.querySelector('#conteudoDiaSemanaQuintaNUlinha3').style.backgroundColor = "#ffffff";
-    }
-    else {
-        document.querySelector('#conteudoDiaSemanaQuintaNUlinha3').style.backgroundColor = "#E5E8E7";
-    }
-});
-
-$('#conteudoDiaSemanaSextaNUlinha3 .hora').on('change',function(){
-    var horaInicioSextaNUlinha3 = document.getElementById("horaInicioSextaNUlinha3");
-    var horaFimSextaNUlinha3 = document.getElementById("horaFimSextaNUlinha3");
-    
-    if (horaInicioSextaNUlinha3.value == "00:00" && horaFimSextaNUlinha3.value == "00:00"){
-    document.querySelector('#conteudoDiaSemanaSextaNUlinha3').style.backgroundColor = "#ffffff";
-    }
-    else if (horaInicioSextaNUlinha3.value == "" || horaFimSextaNUlinha3.value == ""){
-        document.querySelector('#conteudoDiaSemanaSextaNUlinha3').style.backgroundColor = "#ffffff";
-    }
-    else {
-        document.querySelector('#conteudoDiaSemanaSextaNUlinha3').style.backgroundColor = "#E5E8E7";
-    }
-});
-
-$('#conteudoDiaSemanaSabadoNUlinha3 .hora').on('change',function(){
-    var horaInicioSabadoNUlinha3 = document.getElementById("horaInicioSabadoNUlinha3");
-    var horaFimSabadoNUlinha3 = document.getElementById("horaFimSabadoNUlinha3");
-    
-    if (horaInicioSabadoNUlinha3.value == "00:00" && horaFimSabadoNUlinha3.value == "00:00"){
-    document.querySelector('#conteudoDiaSemanaSabadoNUlinha3').style.backgroundColor = "#ffffff";
-    }
-    else if (horaInicioSabadoNUlinha3.value == "" || horaFimSabadoNUlinha3.value == ""){
-        document.querySelector('#conteudoDiaSemanaSabadoNUlinha3').style.backgroundColor = "#ffffff";
-    }
-    else {
-        document.querySelector('#conteudoDiaSemanaSabadoNUlinha3').style.backgroundColor = "#E5E8E7";
-    }
-});
-
-$('#conteudoDiaSemanaDomingoNUlinha3 .hora').on('change',function(){
-    var horaInicioDomingoNUlinha3 = document.getElementById("horaInicioDomingoNUlinha3");
-    var horaFimDomingoNUlinha3 = document.getElementById("horaFimDomingoNUlinha3");
-    
-    if (horaInicioDomingoNUlinha3.value == "00:00" && horaFimDomingoNUlinha3.value == "00:00"){
-    document.querySelector('#conteudoDiaSemanaDomingoNUlinha3').style.backgroundColor = "#ffffff";
-    }
-    else if (horaInicioDomingoNUlinha3.value == "" || horaFimDomingoNUlinha3.value == ""){
-        document.querySelector('#conteudoDiaSemanaDomingoNUlinha3').style.backgroundColor = "#ffffff";
-    }
-    else {
-        document.querySelector('#conteudoDiaSemanaDomingoNUlinha3').style.backgroundColor = "#E5E8E7";
-    }
-});
-
 
-$('#conteudoDiaSemanaSegundaNUlinha4 .hora').on('change',function(){
-    var horaInicioSegundaNUlinha4 = document.getElementById("horaInicioSegundaNUlinha4");
-    var horaFimSegundaNUlinha4 = document.getElementById("horaFimSegundaNUlinha4");
+$('#conteudoDiaSemanaSegundalinha6 .hora').on('change',function(){
+    var horaInicioSegundalinha6 = document.getElementById("horaInicioSegundalinha6");
+    var horaFimSegundalinha6 = document.getElementById("horaFimSegundalinha6");
     
-    if (horaInicioSegundaNUlinha4.value == "00:00" && horaFimSegundaNUlinha4.value == "00:00"){
-    document.querySelector('#conteudoDiaSemanaSegundaNUlinha4').style.backgroundColor = "#ffffff";
+    if (horaInicioSegundalinha6.value == "00:00" && horaFimSegundalinha6.value == "00:00"){
+    document.querySelector('#conteudoDiaSemanaSegundalinha6').style.backgroundColor = "#ffffff";
     }
-    else if (horaInicioSegundaNUlinha4.value == "" || horaFimSegundaNUlinha4.value == ""){
-        document.querySelector('#conteudoDiaSemanaSegundaNUlinha4').style.backgroundColor = "#ffffff";
+    else if (horaInicioSegundalinha6.value == "" || horaFimSegundalinha6.value == ""){
+        document.querySelector('#conteudoDiaSemanaSegundalinha6').style.backgroundColor = "#ffffff";
     }
     else {
-        document.querySelector('#conteudoDiaSemanaSegundaNUlinha4').style.backgroundColor = "#E5E8E7";
+        document.querySelector('#conteudoDiaSemanaSegundalinha6').style.backgroundColor = "#E5E8E7";
     }
 });
 
-$('#conteudoDiaSemanaTercaNUlinha4 .hora').on('change',function(){
-    var horaInicioTercaNUlinha4 = document.getElementById("horaInicioTercaNUlinha4");
-    var horaFimTercaNUlinha4 = document.getElementById("horaFimTercaNUlinha4");
+$('#conteudoDiaSemanaTercalinha6 .hora').on('change',function(){
+    var horaInicioTercalinha6 = document.getElementById("horaInicioTercalinha6");
+    var horaFimTercalinha6 = document.getElementById("horaFimTercalinha6");
     
-    if (horaInicioTercaNUlinha4.value == "00:00" && horaFimTercaNUlinha4.value == "00:00"){
-    document.querySelector('#conteudoDiaSemanaTercaNUlinha4').style.backgroundColor = "#ffffff";
+    if (horaInicioTercalinha6.value == "00:00" && horaFimTercalinha6.value == "00:00"){
+    document.querySelector('#conteudoDiaSemanaTercalinha6').style.backgroundColor = "#ffffff";
     }
-    else if (horaInicioTercaNUlinha4.value == "" || horaFimTercaNUlinha4.value == ""){
-        document.querySelector('#conteudoDiaSemanaTercaNUlinha4').style.backgroundColor = "#ffffff";
+    else if (horaInicioTercalinha6.value == "" || horaFimTercalinha6.value == ""){
+        document.querySelector('#conteudoDiaSemanaTercalinha6').style.backgroundColor = "#ffffff";
     }
     else {
-        document.querySelector('#conteudoDiaSemanaTercaNUlinha4').style.backgroundColor = "#E5E8E7";
+        document.querySelector('#conteudoDiaSemanaTercalinha6').style.backgroundColor = "#E5E8E7";
     }
 });
 
-$('#conteudoDiaSemanaQuartaNUlinha4 .hora').on('change',function(){
-    var horaInicioQuartaNUlinha4 = document.getElementById("horaInicioQuartaNUlinha4");
-    var horaFimQuartaNUlinha4 = document.getElementById("horaFimQuartaNUlinha4");
+$('#conteudoDiaSemanaQuartalinha6 .hora').on('change',function(){
+    var horaInicioQuartalinha6 = document.getElementById("horaInicioQuartalinha6");
+    var horaFimQuartalinha6 = document.getElementById("horaFimQuartalinha6");
     
-    if (horaInicioQuartaNUlinha4.value == "00:00" && horaFimQuartaNUlinha4.value == "00:00"){
-    document.querySelector('#conteudoDiaSemanaQuartaNUlinha4').style.backgroundColor = "#ffffff";
+    if (horaInicioQuartalinha6.value == "00:00" && horaFimQuartalinha6.value == "00:00"){
+    document.querySelector('#conteudoDiaSemanaQuartalinha6').style.backgroundColor = "#ffffff";
     }
-    else if (horaInicioQuartaNUlinha4.value == "" || horaFimQuartaNUlinha4.value == ""){
-        document.querySelector('#conteudoDiaSemanaQuartaNUlinha4').style.backgroundColor = "#ffffff";
+    else if (horaInicioQuartalinha6.value == "" || horaFimQuartalinha6.value == ""){
+        document.querySelector('#conteudoDiaSemanaQuartalinha6').style.backgroundColor = "#ffffff";
     }
     else {
-        document.querySelector('#conteudoDiaSemanaQuartaNUlinha4').style.backgroundColor = "#E5E8E7";
+        document.querySelector('#conteudoDiaSemanaQuartalinha6').style.backgroundColor = "#E5E8E7";
     }
 });
 
-$('#conteudoDiaSemanaQuintaNUlinha4 .hora').on('change',function(){
-    var horaInicioQuintaNUlinha4 = document.getElementById("horaInicioQuintaNUlinha4");
-    var horaFimQuintaNUlinha4 = document.getElementById("horaFimQuintaNUlinha4");
+$('#conteudoDiaSemanaQuintalinha6 .hora').on('change',function(){
+    var horaInicioQuintalinha6 = document.getElementById("horaInicioQuintalinha6");
+    var horaFimQuintalinha6 = document.getElementById("horaFimQuintalinha6");
     
-    if (horaInicioQuintaNUlinha4.value == "00:00" && horaFimQuintaNUlinha4.value == "00:00"){
-    document.querySelector('#conteudoDiaSemanaQuintaNUlinha4').style.backgroundColor = "#ffffff";
+    if (horaInicioQuintalinha6.value == "00:00" && horaFimQuintalinha6.value == "00:00"){
+    document.querySelector('#conteudoDiaSemanaQuintalinha6').style.backgroundColor = "#ffffff";
     }
-    else if (horaInicioQuintaNUlinha4.value == "" || horaFimQuintaNUlinha4.value == ""){
-        document.querySelector('#conteudoDiaSemanaQuintaNUlinha4').style.backgroundColor = "#ffffff";
+    else if (horaInicioQuintalinha6.value == "" || horaFimQuintalinha6.value == ""){
+        document.querySelector('#conteudoDiaSemanaQuintalinha6').style.backgroundColor = "#ffffff";
     }
     else {
-        document.querySelector('#conteudoDiaSemanaQuintaNUlinha4').style.backgroundColor = "#E5E8E7";
+        document.querySelector('#conteudoDiaSemanaQuintalinha6').style.backgroundColor = "#E5E8E7";
     }
 });
 
-$('#conteudoDiaSemanaSextaNUlinha4 .hora').on('change',function(){
-    var horaInicioSextaNUlinha4 = document.getElementById("horaInicioSextaNUlinha4");
-    var horaFimSextaNUlinha4 = document.getElementById("horaFimSextaNUlinha4");
+$('#conteudoDiaSemanaSextalinha6 .hora').on('change',function(){
+    var horaInicioSextalinha6 = document.getElementById("horaInicioSextalinha6");
+    var horaFimSextalinha6 = document.getElementById("horaFimSextalinha6");
     
-    if (horaInicioSextaNUlinha4.value == "00:00" && horaFimSextaNUlinha4.value == "00:00"){
-    document.querySelector('#conteudoDiaSemanaSextaNUlinha4').style.backgroundColor = "#ffffff";
+    if (horaInicioSextalinha6.value == "00:00" && horaFimSextalinha6.value == "00:00"){
+    document.querySelector('#conteudoDiaSemanaSextalinha6').style.backgroundColor = "#ffffff";
     }
-    else if (horaInicioSextaNUlinha4.value == "" || horaFimSextaNUlinha4.value == ""){
-        document.querySelector('#conteudoDiaSemanaSextaNUlinha4').style.backgroundColor = "#ffffff";
+    else if (horaInicioSextalinha6.value == "" || horaFimSextalinha6.value == ""){
+        document.querySelector('#conteudoDiaSemanaSextalinha6').style.backgroundColor = "#ffffff";
     }
     else {
-        document.querySelector('#conteudoDiaSemanaSextaNUlinha4').style.backgroundColor = "#E5E8E7";
+        document.querySelector('#conteudoDiaSemanaSextalinha6').style.backgroundColor = "#E5E8E7";
     }
 });
 
-$('#conteudoDiaSemanaSabadoNUlinha4 .hora').on('change',function(){
-    var horaInicioSabadoNUlinha4 = document.getElementById("horaInicioSabadoNUlinha4");
-    var horaFimSabadoNUlinha4 = document.getElementById("horaFimSabadoNUlinha4");
+$('#conteudoDiaSemanaSabadolinha6 .hora').on('change',function(){
+    var horaInicioSabadolinha6 = document.getElementById("horaInicioSabadolinha6");
+    var horaFimSabadolinha6 = document.getElementById("horaFimSabadolinha6");
     
-    if (horaInicioSabadoNUlinha4.value == "00:00" && horaFimSabadoNUlinha4.value == "00:00"){
-    document.querySelector('#conteudoDiaSemanaSabadoNUlinha4').style.backgroundColor = "#ffffff";
+    if (horaInicioSabadolinha6.value == "00:00" && horaFimSabadolinha6.value == "00:00"){
+    document.querySelector('#conteudoDiaSemanaSabadolinha6').style.backgroundColor = "#ffffff";
     }
-    else if (horaInicioSabadoNUlinha4.value == "" || horaFimSabadoNUlinha4.value == ""){
-        document.querySelector('#conteudoDiaSemanaSabadoNUlinha4').style.backgroundColor = "#ffffff";
+    else if (horaInicioSabadolinha6.value == "" || horaFimSabadolinha6.value == ""){
+        document.querySelector('#conteudoDiaSemanaSabadolinha6').style.backgroundColor = "#ffffff";
     }
     else {
-        document.querySelector('#conteudoDiaSemanaSabadoNUlinha4').style.backgroundColor = "#E5E8E7";
+        document.querySelector('#conteudoDiaSemanaSabadolinha6').style.backgroundColor = "#E5E8E7";
     }
 });
 
-$('#conteudoDiaSemanaDomingoNUlinha4 .hora').on('change',function(){
-    var horaInicioDomingoNUlinha4 = document.getElementById("horaInicioDomingoNUlinha4");
-    var horaFimDomingoNUlinha4 = document.getElementById("horaFimDomingoNUlinha4");
+$('#conteudoDiaSemanaDomingolinha6 .hora').on('change',function(){
+    var horaInicioDomingolinha6 = document.getElementById("horaInicioDomingolinha6");
+    var horaFimDomingolinha6 = document.getElementById("horaFimDomingolinha6");
     
-    if (horaInicioDomingoNUlinha4.value == "00:00" && horaFimDomingoNUlinha4.value == "00:00"){
-    document.querySelector('#conteudoDiaSemanaDomingoNUlinha4').style.backgroundColor = "#ffffff";
+    if (horaInicioDomingolinha6.value == "00:00" && horaFimDomingolinha6.value == "00:00"){
+    document.querySelector('#conteudoDiaSemanaDomingolinha6').style.backgroundColor = "#ffffff";
     }
-    else if (horaInicioDomingoNUlinha4.value == "" || horaFimDomingoNUlinha4.value == ""){
-        document.querySelector('#conteudoDiaSemanaDomingoNUlinha4').style.backgroundColor = "#ffffff";
+    else if (horaInicioDomingolinha6.value == "" || horaFimDomingolinha6.value == ""){
+        document.querySelector('#conteudoDiaSemanaDomingolinha6').style.backgroundColor = "#ffffff";
     }
     else {
-        document.querySelector('#conteudoDiaSemanaDomingoNUlinha4').style.backgroundColor = "#E5E8E7";
+        document.querySelector('#conteudoDiaSemanaDomingolinha6').style.backgroundColor = "#E5E8E7";
     }
 });
 
 
-$('#conteudoDiaSemanaSegundaNUlinha5 .hora').on('change',function(){
-    var horaInicioSegundaNUlinha5 = document.getElementById("horaInicioSegundaNUlinha5");
-    var horaFimSegundaNUlinha5 = document.getElementById("horaFimSegundaNUlinha5");
+$('#conteudoDiaSemanaSegundalinha7 .hora').on('change',function(){
+    var horaInicioSegundalinha7 = document.getElementById("horaInicioSegundalinha7");
+    var horaFimSegundalinha7 = document.getElementById("horaFimSegundalinha7");
     
-    if (horaInicioSegundaNUlinha5.value == "00:00" && horaFimSegundaNUlinha5.value == "00:00"){
-    document.querySelector('#conteudoDiaSemanaSegundaNUlinha5').style.backgroundColor = "#ffffff";
+    if (horaInicioSegundalinha7.value == "00:00" && horaFimSegundalinha7.value == "00:00"){
+    document.querySelector('#conteudoDiaSemanaSegundalinha7').style.backgroundColor = "#ffffff";
     }
-    else if (horaInicioSegundaNUlinha5.value == "" || horaFimSegundaNUlinha5.value == ""){
-        document.querySelector('#conteudoDiaSemanaSegundaNUlinha5').style.backgroundColor = "#ffffff";
+    else if (horaInicioSegundalinha7.value == "" || horaFimSegundalinha7.value == ""){
+        document.querySelector('#conteudoDiaSemanaSegundalinha7').style.backgroundColor = "#ffffff";
     }
     else {
-        document.querySelector('#conteudoDiaSemanaSegundaNUlinha5').style.backgroundColor = "#E5E8E7";
+        document.querySelector('#conteudoDiaSemanaSegundalinha7').style.backgroundColor = "#E5E8E7";
     }
 });
 
-$('#conteudoDiaSemanaTercaNUlinha5 .hora').on('change',function(){
-    var horaInicioTercaNUlinha5 = document.getElementById("horaInicioTercaNUlinha5");
-    var horaFimTercaNUlinha5 = document.getElementById("horaFimTercaNUlinha5");
+$('#conteudoDiaSemanaTercalinha7 .hora').on('change',function(){
+    var horaInicioTercalinha7 = document.getElementById("horaInicioTercalinha7");
+    var horaFimTercalinha7 = document.getElementById("horaFimTercalinha7");
     
-    if (horaInicioTercaNUlinha5.value == "00:00" && horaFimTercaNUlinha5.value == "00:00"){
-    document.querySelector('#conteudoDiaSemanaTercaNUlinha5').style.backgroundColor = "#ffffff";
+    if (horaInicioTercalinha7.value == "00:00" && horaFimTercalinha7.value == "00:00"){
+    document.querySelector('#conteudoDiaSemanaTercalinha7').style.backgroundColor = "#ffffff";
     }
-    else if (horaInicioTercaNUlinha5.value == "" || horaFimTercaNUlinha5.value == ""){
-        document.querySelector('#conteudoDiaSemanaTercaNUlinha5').style.backgroundColor = "#ffffff";
+    else if (horaInicioTercalinha7.value == "" || horaFimTercalinha7.value == ""){
+        document.querySelector('#conteudoDiaSemanaTercalinha7').style.backgroundColor = "#ffffff";
     }
     else {
-        document.querySelector('#conteudoDiaSemanaTercaNUlinha5').style.backgroundColor = "#E5E8E7";
+        document.querySelector('#conteudoDiaSemanaTercalinha7').style.backgroundColor = "#E5E8E7";
     }
 });
 
-$('#conteudoDiaSemanaQuartaNUlinha5 .hora').on('change',function(){
-    var horaInicioQuartaNUlinha5 = document.getElementById("horaInicioQuartaNUlinha5");
-    var horaFimQuartaNUlinha5 = document.getElementById("horaFimQuartaNUlinha5");
+$('#conteudoDiaSemanaQuartalinha7 .hora').on('change',function(){
+    var horaInicioQuartalinha7 = document.getElementById("horaInicioQuartalinha7");
+    var horaFimQuartalinha7 = document.getElementById("horaFimQuartalinha7");
     
-    if (horaInicioQuartaNUlinha5.value == "00:00" && horaFimQuartaNUlinha5.value == "00:00"){
-    document.querySelector('#conteudoDiaSemanaQuartaNUlinha5').style.backgroundColor = "#ffffff";
+    if (horaInicioQuartalinha7.value == "00:00" && horaFimQuartalinha7.value == "00:00"){
+    document.querySelector('#conteudoDiaSemanaQuartalinha7').style.backgroundColor = "#ffffff";
     }
-    else if (horaInicioQuartaNUlinha5.value == "" || horaFimQuartaNUlinha5.value == ""){
-        document.querySelector('#conteudoDiaSemanaQuartaNUlinha5').style.backgroundColor = "#ffffff";
+    else if (horaInicioQuartalinha7.value == "" || horaFimQuartalinha7.value == ""){
+        document.querySelector('#conteudoDiaSemanaQuartalinha7').style.backgroundColor = "#ffffff";
     }
     else {
-        document.querySelector('#conteudoDiaSemanaQuartaNUlinha5').style.backgroundColor = "#E5E8E7";
+        document.querySelector('#conteudoDiaSemanaQuartalinha7').style.backgroundColor = "#E5E8E7";
     }
 });
 
-$('#conteudoDiaSemanaQuintaNUlinha5 .hora').on('change',function(){
-    var horaInicioQuintaNUlinha5 = document.getElementById("horaInicioQuintaNUlinha5");
-    var horaFimQuintaNUlinha5 = document.getElementById("horaFimQuintaNUlinha5");
+$('#conteudoDiaSemanaQuintalinha7 .hora').on('change',function(){
+    var horaInicioQuintalinha7 = document.getElementById("horaInicioQuintalinha7");
+    var horaFimQuintalinha7 = document.getElementById("horaFimQuintalinha7");
     
-    if (horaInicioQuintaNUlinha5.value == "00:00" && horaFimQuintaNUlinha5.value == "00:00"){
-    document.querySelector('#conteudoDiaSemanaQuintaNUlinha5').style.backgroundColor = "#ffffff";
+    if (horaInicioQuintalinha7.value == "00:00" && horaFimQuintalinha7.value == "00:00"){
+    document.querySelector('#conteudoDiaSemanaQuintalinha7').style.backgroundColor = "#ffffff";
     }
-    else if (horaInicioQuintaNUlinha5.value == "" || horaFimQuintaNUlinha5.value == ""){
-        document.querySelector('#conteudoDiaSemanaQuintaNUlinha5').style.backgroundColor = "#ffffff";
+    else if (horaInicioQuintalinha7.value == "" || horaFimQuintalinha7.value == ""){
+        document.querySelector('#conteudoDiaSemanaQuintalinha7').style.backgroundColor = "#ffffff";
     }
     else {
-        document.querySelector('#conteudoDiaSemanaQuintaNUlinha5').style.backgroundColor = "#E5E8E7";
+        document.querySelector('#conteudoDiaSemanaQuintalinha7').style.backgroundColor = "#E5E8E7";
     }
 });
 
-$('#conteudoDiaSemanaSextaNUlinha5 .hora').on('change',function(){
-    var horaInicioSextaNUlinha5 = document.getElementById("horaInicioSextaNUlinha5");
-    var horaFimSextaNUlinha5 = document.getElementById("horaFimSextaNUlinha5");
+$('#conteudoDiaSemanaSextalinha7 .hora').on('change',function(){
+    var horaInicioSextalinha7 = document.getElementById("horaInicioSextalinha7");
+    var horaFimSextalinha7 = document.getElementById("horaFimSextalinha7");
     
-    if (horaInicioSextaNUlinha5.value == "00:00" && horaFimSextaNUlinha5.value == "00:00"){
-    document.querySelector('#conteudoDiaSemanaSextaNUlinha5').style.backgroundColor = "#ffffff";
+    if (horaInicioSextalinha7.value == "00:00" && horaFimSextalinha7.value == "00:00"){
+    document.querySelector('#conteudoDiaSemanaSextalinha7').style.backgroundColor = "#ffffff";
     }
-    else if (horaInicioSextaNUlinha5.value == "" || horaFimSextaNUlinha5.value == ""){
-        document.querySelector('#conteudoDiaSemanaSextaNUlinha5').style.backgroundColor = "#ffffff";
+    else if (horaInicioSextalinha7.value == "" || horaFimSextalinha7.value == ""){
+        document.querySelector('#conteudoDiaSemanaSextalinha7').style.backgroundColor = "#ffffff";
     }
     else {
-        document.querySelector('#conteudoDiaSemanaSextaNUlinha5').style.backgroundColor = "#E5E8E7";
+        document.querySelector('#conteudoDiaSemanaSextalinha7').style.backgroundColor = "#E5E8E7";
     }
 });
 
-$('#conteudoDiaSemanaSabadoNUlinha5 .hora').on('change',function(){
-    var horaInicioSabadoNUlinha5 = document.getElementById("horaInicioSabadoNUlinha5");
-    var horaFimSabadoNUlinha5 = document.getElementById("horaFimSabadoNUlinha5");
+$('#conteudoDiaSemanaSabadolinha7 .hora').on('change',function(){
+    var horaInicioSabadolinha7 = document.getElementById("horaInicioSabadolinha7");
+    var horaFimSabadolinha7 = document.getElementById("horaFimSabadolinha7");
     
-    if (horaInicioSabadoNUlinha5.value == "00:00" && horaFimSabadoNUlinha5.value == "00:00"){
-    document.querySelector('#conteudoDiaSemanaSabadoNUlinha5').style.backgroundColor = "#ffffff";
+    if (horaInicioSabadolinha7.value == "00:00" && horaFimSabadolinha7.value == "00:00"){
+    document.querySelector('#conteudoDiaSemanaSabadolinha7').style.backgroundColor = "#ffffff";
     }
-    else if (horaInicioSabadoNUlinha5.value == "" || horaFimSabadoNUlinha5.value == ""){
-        document.querySelector('#conteudoDiaSemanaSabadoNUlinha5').style.backgroundColor = "#ffffff";
+    else if (horaInicioSabadolinha7.value == "" || horaFimSabadolinha7.value == ""){
+        document.querySelector('#conteudoDiaSemanaSabadolinha7').style.backgroundColor = "#ffffff";
     }
     else {
-        document.querySelector('#conteudoDiaSemanaSabadoNUlinha5').style.backgroundColor = "#E5E8E7";
+        document.querySelector('#conteudoDiaSemanaSabadolinha7').style.backgroundColor = "#E5E8E7";
     }
 });
 
-$('#conteudoDiaSemanaDomingoNUlinha5 .hora').on('change',function(){
-    var horaInicioDomingoNUlinha5 = document.getElementById("horaInicioDomingoNUlinha5");
-    var horaFimDomingoNUlinha5 = document.getElementById("horaFimDomingoNUlinha5");
+$('#conteudoDiaSemanaDomingolinha7 .hora').on('change',function(){
+    var horaInicioDomingolinha7 = document.getElementById("horaInicioDomingolinha7");
+    var horaFimDomingolinha7 = document.getElementById("horaFimDomingolinha7");
     
-    if (horaInicioDomingoNUlinha5.value == "00:00" && horaFimDomingoNUlinha5.value == "00:00"){
-    document.querySelector('#conteudoDiaSemanaDomingoNUlinha5').style.backgroundColor = "#ffffff";
+    if (horaInicioDomingolinha7.value == "00:00" && horaFimDomingolinha7.value == "00:00"){
+    document.querySelector('#conteudoDiaSemanaDomingolinha7').style.backgroundColor = "#ffffff";
     }
-    else if (horaInicioDomingoNUlinha5.value == "" || horaFimDomingoNUlinha5.value == ""){
-        document.querySelector('#conteudoDiaSemanaDomingoNUlinha5').style.backgroundColor = "#ffffff";
+    else if (horaInicioDomingolinha7.value == "" || horaFimDomingolinha7.value == ""){
+        document.querySelector('#conteudoDiaSemanaDomingolinha7').style.backgroundColor = "#ffffff";
     }
     else {
-        document.querySelector('#conteudoDiaSemanaDomingoNUlinha5').style.backgroundColor = "#E5E8E7";
+        document.querySelector('#conteudoDiaSemanaDomingolinha7').style.backgroundColor = "#E5E8E7";
     }
 });

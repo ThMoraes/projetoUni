@@ -5,10 +5,13 @@
     font-family: Arial;
 }
 body{
-    background: url(img/fundoPagina.png) repeat-x fixed;
-    background-repeat: no-repeat;
-    background-size: cover;/* 
-    overflow-x: hidden; */
+	/* background:url(img/Background.png) repeat-x fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden; */
+  background-color: #f7f7f7;
+  font-family: Arial, Helvetica, sans-serif;
+  word-wrap: break-word;
 }
 
 
@@ -22,11 +25,12 @@ body{
 .conteudoTabela{
     margin: 0px auto;
 }
-.logo{
-    background-color: #ffffff;
+.topo{
+    background-color: #FF7514;
 }
-#logoTopoCompleto{
-    text-align: center;
+.nomeTopo{
+    color: #ffffff;
+    text-align: left;
     width: 100%;
 }
 .disciplina, .diaSemana, .Total{
@@ -80,15 +84,10 @@ td{
     cursor: pointer;
 }
 input[type="time"]::-webkit-calendar-picker-indicator{
-    filter: invert(38%) sepia(13%) saturate(3907%) hue-rotate(8750448deg) brightness(95%) contrast(90%);
+    filter: invert(28%) sepia(13%) saturate(3907%) hue-rotate(10deg) brightness(210%) contrast(100%);
     cursor: pointer;
 
-}
-/* input[type="time"]::-webkit-calendar-picker-indicator{
-    filter: invert(38%) sepia(13%) saturate(0%) hue-rotate(8750448deg) brightness(95%) contrast(90%);
-
-} */
-.conteudoTotal{
+}doTotal{
     width: 70px;
 }
 
@@ -133,8 +132,8 @@ input[type="time"]::-webkit-calendar-picker-indicator{
     padding: 5px 20px;
     margin: 0px 10px;
     color: #ffffff;
-    background-color: #D31C5B;
-    border: #D31C5B 1px solid;
+    background-color: #004284;
+    border: #004284 1px solid;
     border-radius: 5px;
     cursor: pointer;
 }
